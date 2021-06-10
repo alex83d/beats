@@ -1,6 +1,14 @@
 html {
     box-sizing: border-box;
     font-size: $baseFontSize;
+
+    @include tablets {
+      font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+      font-size: $baseFontSize - 2px;
+    }
   }
   *, *:before, *:after {
     box-sizing: inherit;
