@@ -1,0 +1,40 @@
+.socials {
+    display: flex;
+    margin-right: rem(70px);
+  }
+  
+  .socials__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .socials__item {
+    margin-right: rem(10px);
+  }
+  
+  .socials__item:last-child {
+    margin-right: rem(0px);
+  }
+  
+  .socials__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: rem(36px);
+    height: rem(36px);
+  }
+
+  @each $social, $position in (tg: rem(-10px) rem(-10px), vk: rem(-66px) rem(-10px), fb: rem(-122px) rem(-10px), insta: rem(-178px) -10px) {
+    .socials__item--icon--#{$social} {
+      background: url(../img/icon/socials.png) #{$position};
+
+      &:hover {
+        background: url(../img/icon/socials.png) #{$position};
+        filter: brightness(0);
+        transition: color 0.6s ease-in-out;
+
+      }
+    }
+  }
+  

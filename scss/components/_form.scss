@@ -1,0 +1,72 @@
+.form-section {
+    background-image: url("../img/delivery_fon.png"), linear-gradient(#181818);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+ }
+
+ .form-title {
+     color: #fff;
+     margin-top: rem(68px);
+     margin-bottom: rem(61px);
+ }
+
+.form {
+    display: flex;
+    padding-bottom: rem(85px);
+
+   
+
+    &__col {
+        flex: 1;
+        margin-right: rem(20px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 0.68rem;
+        }
+    }
+
+    &__block {
+        flex: 1;
+        margin-right: rem(20px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: rem(3px) solid transparent;
+        padding: rem(18px) rem(12px);
+
+        &:focus {
+            outline: none;
+            border-color: $red;
+        }
+
+        &--textarea {
+            height: rem(174px);
+            resize: none;
+            margin-bottom: rem(36px);
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        
+        &:nth-child(3) {
+            margin-bottom: rem(44px);
+        }  
+    }
+
+}

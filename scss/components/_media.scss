@@ -1,0 +1,48 @@
+
+
+@media (max-width:768px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .fixed-menu {
+        display: none;
+    }
+
+    .menu_header {
+        display: none;
+    }
+
+    .hero {
+
+        padding-bottom: rem(173px);
+
+        &__box {
+            flex-direction: column-reverse;
+        }
+
+        &__content {
+            align-items: center;
+        }
+
+        &__img {
+            margin-bottom: rem(64px);
+        }
+
+
+        &__title {
+            text-align: center;
+            margin-bottom: rem(5px);
+        }
+
+        &__features {
+            display: none;
+        }
+    }
+
+
+}
+
+@media (max-width:576px) {}
+
+@media (max-width:375px) {}

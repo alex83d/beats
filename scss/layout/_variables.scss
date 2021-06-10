@@ -1,0 +1,53 @@
+//base font-size
+$baseFontSize: 16px;
+
+//container size
+$containerWidth: 1100px;
+
+
+
+//colors
+$red: #E01F3D;
+$body: #666666;
+$black: #292929;
+$white: #ffffff;
+$back: #F5F5F5;
+$shape: #DADADA;
+$reviews: #F8FAF9;
+
+
+//z-index
+$z_fixed-menu: 100;
+
+
+//fonts
+$family_1: "Play";
+$family_2: "Alegreya Sans";
+$famili_3: "Open sans";
+
+//function px to rem
+@function rem($px) {
+    @return $px / $baseFontSize + 0rem;
+}
+
+// миксины
+@mixin title {
+    font-size: rem(48px);
+    font-weight: bold;
+    font-family: $family_1;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    color: #000000;
+
+     
+}
+
+@mixin text {
+    font-size: rem(16px);
+    font-weight: 400;
+    font-family: $family_1;
+    color: $body;
+    
+}

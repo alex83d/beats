@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'features-icon';
+    src:
+      url('../img/fonts/features-icon.ttf') format('truetype');
+      
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="features__icon--"], [class*=" features__icon--"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'features-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .features__icon--noise:before {
+    content: "\e900";
+  }
+  .features__icon--charging:before {
+    content: "\e901";
+  }
+  .features__icon--plug:before {
+    content: "\e902";
+  }
