@@ -4,10 +4,6 @@
     padding-bottom: rem(50px);
 
 
-    @include tablets {
-        display: none;
-    }
-
     &__list {
         display: inline-flex;
 
@@ -27,6 +23,11 @@
     & a {
         font-size: rem(41px);
         margin-right: rem(11px);
+    }
+
+
+    @include tablets {
+        display: none;
     }
 
 

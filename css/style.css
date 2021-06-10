@@ -225,6 +225,9 @@ body {
   font-style: normal;
   font-family: "Play";
   font-weight: 400;
+  white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .contact img {
@@ -368,12 +371,6 @@ body {
   padding-bottom: 3.125rem;
 }
 
-@media screen and (max-width: 768px) {
-  .features {
-    display: none;
-  }
-}
-
 .features__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -402,6 +399,12 @@ body {
 .features a {
   font-size: 2.5625rem;
   margin-right: 0.6875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    display: none;
+  }
 }
 
 .hero {
@@ -577,6 +580,10 @@ body {
 
 .menu__item:last-child {
   margin-right: 0rem;
+}
+
+.menu__link {
+  white-space: nowrap;
 }
 
 .profit-section {
@@ -1013,5 +1020,33 @@ body {
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-bottom: 0.1875rem;
+}
+
+.hamburger {
+  width: 26px;
+  height: 23px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+
+.hamburger__plank {
+  display: block;
+  background: #292929;
+  height: 4px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */

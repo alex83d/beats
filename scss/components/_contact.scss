@@ -5,6 +5,8 @@
     font-style: normal;
     font-family: $family_1;
     font-weight: 400;
+    white-space: nowrap;
+    flex-shrink: 0;
 
     & img {
         margin-right: rem(6px);
