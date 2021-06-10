@@ -31,15 +31,6 @@
     }
 
     &__contact {
-        display: inline-flex;
-        align-items: center;
-        font-size: rem(18px);
-        font-style: normal;
-        font-family: $family_1;
-        font-weight: 400;
-
-        & img {
-            margin-right: rem(6px);
-        }
+     
     }
 }

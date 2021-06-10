@@ -5,52 +5,31 @@
     padding: rem(24px) 0;
     margin-bottom: rem(18px);
 
+    @include tablets {
+        justify-content: space-between;
+
+    }
+
     &__col {
         display: flex;
         align-items: center;       
     }
 
-    &_contact {
-        display: inline-flex;
-        align-items: center;
-        font-size: rem(18px);
-        font-style: normal;
-        font-family: $family_1;
-        font-weight: 400;
-
-        & img {
-            margin-right: rem(6px);
-        }
+    &-menu {
+        @include tablets {
+            display: none; 
+            }
     }
+
+    &_contact {
+        @include tablets {
+            display: none; 
+            }
+    }
+    
 }
 
 .logo {
     margin-right: rem(38px);
 }
 
-.menu {
-
-    margin-right: rem(46px);
-    font-size: rem(18px);
-    font-family: $family_2;
-    font-weight: 400;
-    font-style: normal;
-    line-height: rem(30px);
-
-    &__list {
-        display: inline-flex;
-        justify-content: space-between;        
-    }
-
-    &__item {
-        margin-right: rem(27px);
-
-
-         &:last-child {
-        margin-right: rem(0px);
-      }
-    }
-
-   
-   
-}

@@ -14,18 +14,18 @@
   }
   
   .socials__item:last-child {
-    margin-right: rem(0px);
+    margin-right: 0;
   }
   
   .socials__link {
     display: flex;
     align-items: center;
     text-decoration: none;
-    width: rem(36px);
-    height: rem(36px);
+    width: 36px;
+    height: 36px;
   }
 
-  @each $social, $position in (tg: rem(-10px) rem(-10px), vk: rem(-66px) rem(-10px), fb: rem(-122px) rem(-10px), insta: rem(-178px) -10px) {
+  @each $social, $position in (tg: -10px -10px, vk: -66px -10px, fb: -122px -10px, insta: -178px -10px) {
     .socials__item--icon--#{$social} {
       background: url(../img/icon/socials.png) #{$position};
 
