@@ -203,7 +203,7 @@ body {
 }
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +376,7 @@ body {
   height: 2.375rem;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
-  bottom: 0.625rem;
+  bottom: -1rem;
   right: 10%;
 }
 
