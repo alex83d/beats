@@ -30,6 +30,11 @@ $famili_3: "Open sans";
     @return $px / $baseFontSize + 0rem;
 }
 
+//breackpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 // миксины
 @mixin title {
     font-size: rem(48px);
