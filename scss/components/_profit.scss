@@ -46,10 +46,15 @@
 
         @include phones {
             flex-direction: row;
+            flex: 0 0 100%;
         }
 
         &:nth-child(-n+2) {
             margin-right: rem(55px);
+
+            @include tablets {
+                margin-right: 3%;
+            }
 
             @include phones {
                 margin-right: 0;
@@ -73,18 +78,23 @@
     }
 
     &__img {
-        width: rem(128px);
+        max-width: rem(128px);
+        width: 96%;
+        min-height: rem(128px);
         height: rem(128px);
+        padding: rem(30px);
+        background-size: contain;
+        background-position: center;
         display: inline-flex;
         position: relative;
-        border-radius: 50%;
+        border-radius: 100%;
         background-color: $back;
         overflow: hidden;
         margin-bottom: rem(24px);
+
         @include phones {
-            flex: 0 0 26%;
             margin-right: 2%;
-            
+
         }
     }
 
@@ -95,9 +105,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @include phones {
-            object-fit: scale-down;
-        }
     }
 
     &__title {
