@@ -75,11 +75,12 @@
 
         &__content {
             align-items: center;
+            margin-right: 0;
         }
 
         &__img {
-            width: 323px;
-            height: 323px;
+            width: rem(323px);
+            height: rem(323px);
             margin-bottom: rem(64px);
         }
 
@@ -88,6 +89,19 @@
             text-align: center;
             margin-bottom: rem(5px);
         }
+    }
+
+    @include phones {
+
+
+        &__content {
+            align-items: center;
+        }
+
+        &__desc {
+            text-align: center;
+        }
+
     }
 
 }

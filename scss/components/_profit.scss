@@ -1,7 +1,7 @@
 .profit-section {
     padding-top: rem(103px);
     padding-bottom: rem(89px);
-    
+
 }
 
 .headline {
@@ -14,7 +14,7 @@
     &__title {
         margin-bottom: rem(18px)
     }
-    
+
     &__subtitle {
         @include text;
         max-width: rem(590px);
@@ -30,7 +30,11 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;    
+        justify-content: space-between;
+
+        @include phones {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -40,8 +44,16 @@
         flex-direction: column;
         align-items: center;
 
+        @include phones {
+            flex-direction: row;
+        }
+
         &:nth-child(-n+2) {
             margin-right: rem(55px);
+
+            @include phones {
+                margin-right: 0;
+            }
         }
 
 
@@ -57,7 +69,7 @@
                 display: none;
             }
         }
-        
+
     }
 
     &__img {
@@ -69,15 +81,23 @@
         background-color: $back;
         overflow: hidden;
         margin-bottom: rem(24px);
+        @include phones {
+            flex: 0 0 26%;
+            margin-right: 2%;
+            
+        }
     }
 
     &__icon {
-        width: rem(75px);
-        height: rem(69px);
+        width: rem(68px);
+        height: rem(68px);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include phones {
+            object-fit: scale-down;
+        }
     }
 
     &__title {
@@ -88,9 +108,7 @@
     }
 
     &__text {
-       @include text;
+        @include text;
     }
 
 }
-
-
