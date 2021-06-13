@@ -26,7 +26,7 @@
     &__box {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     &__content {
@@ -35,6 +35,7 @@
         align-items: flex-start;
         flex: 0 0 35%;
         margin-right: rem(32px);
+        padding-top: 6%;
     }
 
     &__title {
@@ -49,6 +50,10 @@
         font-weight: 400;
         font-family: $family_2;
         margin-bottom: rem(36px);
+    }
+
+    &__btn {
+        margin-bottom: rem(70px);
     }
 
     &__img {

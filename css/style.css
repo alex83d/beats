@@ -435,9 +435,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .hero__content {
@@ -455,6 +455,7 @@ body {
       -ms-flex: 0 0 35%;
           flex: 0 0 35%;
   margin-right: 2rem;
+  padding-top: 6%;
 }
 
 .hero__title {
@@ -476,6 +477,10 @@ body {
   font-weight: 400;
   font-family: "Alegreya Sans";
   margin-bottom: 2.25rem;
+}
+
+.hero__btn {
+  margin-bottom: 4.375rem;
 }
 
 .hero__img {
