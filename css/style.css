@@ -761,9 +761,30 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .reviews__avatar {
   width: 15.8125rem;
   height: 16.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 8.125rem;
+    height: 8.125rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -778,6 +799,12 @@ body {
       -ms-flex: 1;
           flex: 1;
   margin-left: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
