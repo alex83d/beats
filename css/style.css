@@ -367,10 +367,6 @@ body {
   content: "\e902";
 }
 
-.features {
-  padding-bottom: 3.125rem;
-}
-
 .features__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -500,6 +496,9 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero__content {
     -webkit-box-align: center;
