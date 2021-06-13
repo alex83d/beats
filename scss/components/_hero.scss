@@ -40,6 +40,7 @@
     &__title {
         @include title;
         text-align: start;
+        line-height: 52px;
         margin-bottom: rem(20px);
     }
 
@@ -71,6 +72,8 @@
         }
 
         &__img {
+            width: 323px;
+            height: 323px;
             margin-bottom: rem(64px);
         }
 

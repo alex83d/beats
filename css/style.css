@@ -80,7 +80,6 @@ select {
 
 body {
   height: 100%;
-  line-height: 1.42;
   color: #292929;
   font-family: "Play", "Alegreya Sans", "Open sans";
 }
@@ -467,6 +466,7 @@ body {
   line-height: 1;
   color: #000000;
   text-align: start;
+  line-height: 52px;
   margin-bottom: 1.25rem;
 }
 
@@ -501,6 +501,8 @@ body {
             align-items: center;
   }
   .hero__img {
+    width: 323px;
+    height: 323px;
     margin-bottom: 4rem;
   }
   .hero__title {
@@ -516,9 +518,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1.5rem 0;
   margin-bottom: 1.125rem;
 }
@@ -569,9 +571,11 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu__item {
@@ -660,6 +664,12 @@ body {
   width: 4.375rem;
   left: 95%;
   top: 3.4375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .desc__item:nth-child(-n+2)::before {
+    display: none;
+  }
 }
 
 .desc__img {
