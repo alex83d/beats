@@ -1,6 +1,8 @@
 .section {
     height: 100vh;
     height: -webkit-fill-available;
+    height: fill-available;
+    height: -moz-available;
     display: flex;
     flex-direction: column;
     justify-content: center;
