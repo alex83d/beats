@@ -3,23 +3,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
- }
+}
 
- .form-title {
-     color: #fff;
-     margin-top: rem(68px);
-     margin-bottom: rem(61px);
- }
+.form-title {
+    color: #fff;
+    margin-top: rem(68px);
+    margin-bottom: rem(61px);
+}
 
 .form {
     display: flex;
     padding-bottom: rem(85px);
 
-   
+    @include tablets {
+        flex-direction: column;
+        padding: 0 19%;
+    }
+
+
+
 
     &__col {
         flex: 1;
         margin-right: rem(20px);
+
+        @include tablets {
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -63,10 +73,15 @@
     &__controls {
         display: flex;
         flex-wrap: wrap;
-        
+
         &:nth-child(3) {
             margin-bottom: rem(44px);
-        }  
+        }
+    }
+
+    &__btn {
+       display: flex;
+       justify-content: center;
     }
 
 }
