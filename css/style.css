@@ -938,6 +938,18 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+  .form-section {
+    padding-bottom: 184px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-section {
+    padding-bottom: 84px;
+  }
+}
+
 .form-title {
   color: #fff;
   margin-top: 4.25rem;

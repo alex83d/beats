@@ -4,6 +4,14 @@
     background-size: cover;
     background-position: center;
     color: $white;
+    @include tablets {
+        padding-bottom: 184px;
+    }
+    
+    @include phones {
+        padding-bottom: 84px;
+    }
+    
 }
 
 .form-title {
