@@ -1,7 +1,7 @@
 .hamburger {
     width: 26px;
     height: 23px;
-    
+
     flex-direction: column;
     justify-content: space-between;
     display: none;
@@ -14,7 +14,7 @@
     }
 
     @include tablets {
-        display: inline-flex; 
-        }
+        display: inline-flex;
+    }
 
 }
