@@ -712,6 +712,16 @@ body {
 .reviews-section {
   padding-bottom: 3.9375rem;
   padding-top: 4.25rem;
+  position: relative;
+}
+
+.reviews-section::before {
+  position: absolute;
+  content: url("../img/decor/grey-circle.svg");
+  width: 2.1875rem;
+  height: 2.1875rem;
+  bottom: -1rem;
+  left: 10%;
 }
 
 .section__title_reviews {

@@ -1,6 +1,18 @@
 .reviews-section {
     padding-bottom: rem(63px);
     padding-top: rem(68px);
+    position: relative;
+
+
+    &::before {
+        position: absolute;
+        content: url("../img/decor/grey-circle.svg");
+        width: rem(35px);
+        height: rem(35px);
+        //transform: rotate(7deg);
+        bottom: rem(-16px);
+        left: 10%;
+    }
 }
 
 
