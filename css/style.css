@@ -638,6 +638,16 @@ body {
 .profit-section {
   padding-top: 6.4375rem;
   padding-bottom: 5.5625rem;
+  position: relative;
+}
+
+.profit-section::before {
+  position: absolute;
+  content: url("../img/decor/triangle-red.svg");
+  width: 2.125rem;
+  height: 2.125rem;
+  bottom: -1rem;
+  left: 10%;
 }
 
 .headline {

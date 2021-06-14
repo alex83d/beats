@@ -1,6 +1,16 @@
 .profit-section {
     padding-top: rem(103px);
     padding-bottom: rem(89px);
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url("../img/decor/triangle-red.svg");
+        width: rem(34px);
+        height: rem(34px);
+        bottom: rem(-16px);
+        left: 10%;
+    }
 
 }
 
