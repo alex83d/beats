@@ -7,9 +7,37 @@
     font-weight: 400;
     white-space: nowrap;
     flex-shrink: 0;
-    padding:5% 0;
+    padding: 5% 0;
 
-    & img {
+
+
+
+    &__logo {
+        width: 12px;
+        height: 12px;
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        background-color: $black;
+        mask-image: url("../img/tel.svg");
         margin-right: rem(6px);
     }
+
+    @include tablets {
+        color: $red;
+
+        &__logo {
+            background-color: $red;
+        }
+    }
+
+    @include phones {
+        color: $black;
+
+        &__logo {
+            background-color: $black;
+        }
+    }
+
+
 }

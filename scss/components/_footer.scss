@@ -32,6 +32,8 @@
         margin-bottom: rem(3px);
     }
 
+
+
     @include phones {
         flex-direction: column;
         min-height: rem(151px);

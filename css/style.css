@@ -214,8 +214,37 @@ body {
   padding: 5% 0;
 }
 
-.contact img {
+.contact__logo {
+  width: 12px;
+  height: 12px;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  background-color: #292929;
+  -webkit-mask-image: url("../img/tel.svg");
+          mask-image: url("../img/tel.svg");
   margin-right: 0.375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    color: #E01F3D;
+  }
+  .contact__logo {
+    background-color: #E01F3D;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    color: #292929;
+  }
+  .contact__logo {
+    background-color: #292929;
+  }
 }
 
 .section {
