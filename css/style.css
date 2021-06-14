@@ -429,6 +429,7 @@ body {
   background: #F5F5F5;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 54px;
 }
 
 .hero::before {
