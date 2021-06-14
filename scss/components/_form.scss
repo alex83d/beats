@@ -4,6 +4,16 @@
     background-size: cover;
     background-position: center;
     color: $white;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url("../img/decor/pentagon.svg");
+        width: rem(32px);
+        height: rem(38px);
+        top: rem(-32px);
+        right: 10%;
+    }
     @include tablets {
         padding-bottom: 184px;
     }

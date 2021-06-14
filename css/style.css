@@ -962,6 +962,16 @@ body {
   background-size: cover;
   background-position: center;
   color: #ffffff;
+  position: relative;
+}
+
+.form-section::before {
+  position: absolute;
+  content: url("../img/decor/pentagon.svg");
+  width: 2rem;
+  height: 2.375rem;
+  top: -2rem;
+  right: 10%;
 }
 
 @media screen and (max-width: 768px) {
