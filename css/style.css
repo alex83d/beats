@@ -971,7 +971,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 19%;
+    padding: 0 10%;
   }
 }
 
