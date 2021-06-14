@@ -279,6 +279,12 @@ body {
   max-width: 37.0625rem;
 }
 
+@media screen and (max-width: 360px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+}
+
 .fixed-menu {
   position: fixed;
   top: 13.1875rem;
@@ -482,6 +488,12 @@ body {
   text-align: start;
   line-height: 52px;
   margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 360px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
 }
 
 .hero__desc {
@@ -1138,7 +1150,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-@media (max-width: 429px) {
+@media screen and (max-width: 429px) {
   .radio :nth-child(-n+2) {
     margin-bottom: 6%;
   }

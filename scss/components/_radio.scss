@@ -61,7 +61,7 @@
     }
 
 
-    @media (max-width:429px) {
+    @media screen and (max-width:429px) {
         :nth-child(-n+2) {
             margin-bottom: 6%;
         }

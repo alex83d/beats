@@ -46,6 +46,10 @@ $phones: 480px;
     line-height: 1;
     color: #000000;
 
+    @media screen and (max-width:360px) {
+        font-size: rem(40px);        
+    }
+
      
 }
 
