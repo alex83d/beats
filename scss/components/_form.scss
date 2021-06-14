@@ -67,6 +67,10 @@
         border: rem(3px) solid transparent;
         padding: rem(18px) rem(12px);
 
+        @include tablets {
+            padding: rem(10px) rem(8px);
+        }
+
         &:focus {
             outline: none;
             border-color: $red;
@@ -76,6 +80,10 @@
             height: rem(174px);
             resize: none;
             margin-bottom: rem(36px);
+
+            @include tablets {
+                height: rem(82px);
+            }
         }
     }
 

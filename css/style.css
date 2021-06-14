@@ -1031,6 +1031,12 @@ body {
   padding: 1.125rem 0.75rem;
 }
 
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.625rem 0.5rem;
+  }
+}
+
 .form__input:focus {
   outline: none;
   border-color: #E01F3D;
@@ -1040,6 +1046,12 @@ body {
   height: 10.875rem;
   resize: none;
   margin-bottom: 2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 5.125rem;
+  }
 }
 
 .form__controls {
