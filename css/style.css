@@ -811,6 +811,7 @@ body {
   height: 2.1875rem;
   bottom: -1rem;
   left: 10%;
+  z-index: 1;
 }
 
 .section__title_reviews {
@@ -968,8 +969,8 @@ body {
 .form-section::before {
   position: absolute;
   content: url("../img/decor/pentagon.svg");
-  width: 2rem;
-  height: 2.375rem;
+  width: 3.125rem;
+  height: 3.125rem;
   top: -2rem;
   right: 10%;
 }
