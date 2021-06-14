@@ -14,6 +14,9 @@
   
   .socials__item {
     margin-right: rem(10px);
+    @include phones{
+      margin-right: rem(14px);
+    }
   }
   
   .socials__item:last-child {
@@ -24,20 +27,25 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;    
   }
 
-  @each $social, $position in (tg: -10px -10px, vk: -66px -10px, fb: -122px -10px, insta: -178px -10px) {
-    .socials__item--icon--#{$social} {
-      background: url(../img/icon/socials.png) #{$position};
+  .socials__icon {
+    width: 30px;
+    height: 30px;
+    fill: #B3B3B3;
 
-      &:hover {
-        background: url(../img/icon/socials.png) #{$position};
-        filter: brightness(0);
-        transition: color 0.6s ease-in-out;
-
-      }
+    &:hover {
+      fill: $black;
+      transition: 0.8s;
     }
+
+    @include phones {
+      width: 24px;
+      height: 24px;
+    }
+
   }
+
   
