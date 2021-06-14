@@ -1138,6 +1138,15 @@ body {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 429px) {
+  .radio :nth-child(-n+2) {
+    margin-bottom: 6%;
+  }
+  .radio--checkbox {
+    margin-top: 0;
+  }
+}
+
 .section-map {
   width: 100%;
   min-height: 40.75rem;
