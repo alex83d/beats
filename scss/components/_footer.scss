@@ -4,6 +4,8 @@
     align-items: center;
     min-height: rem(86px);
 
+    
+
     &__col {
         display: flex;
         flex-direction: column;
@@ -30,7 +32,20 @@
         margin-bottom: rem(3px);
     }
 
-    &__contact {
-     
+    @include phones {
+        flex-direction: column;
+        min-height: rem(151px);
+        padding: 6% 0;
+        &__col {
+            padding: 0;
+            align-items: center;
+
+            &--right{
+                padding: 0;
+            }
+        }
+    
+    
     }
+
 }
