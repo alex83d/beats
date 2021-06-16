@@ -743,6 +743,7 @@ body {
 @media screen and (max-width: 480px) {
   .desc__item:nth-child(-n+2) {
     margin-right: 0;
+    margin-bottom: 24px;
   }
 }
 
@@ -782,6 +783,7 @@ body {
 @media screen and (max-width: 480px) {
   .desc__img {
     margin-right: 2%;
+    margin-bottom: 0;
   }
 }
 
@@ -1119,6 +1121,9 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .radio__title {
