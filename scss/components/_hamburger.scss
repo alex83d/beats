@@ -15,6 +15,9 @@
 
     @include tablets {
         display: inline-flex;
+        position: fixed;
+        top: 8%;
+        right: 4%;
     }
 
 }

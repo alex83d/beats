@@ -1285,6 +1285,9 @@ body {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    position: fixed;
+    top: 8%;
+    right: 4%;
   }
 }
 /*# sourceMappingURL=style.css.map */
