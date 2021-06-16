@@ -1,6 +1,9 @@
 .section {
     height: 100vh;
+    width: 100%;
     height: -webkit-fill-available;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     height: fill-available;
     height: -moz-available;
     display: flex;
