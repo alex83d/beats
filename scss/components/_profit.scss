@@ -126,6 +126,7 @@
 
     &__text {
         @include text;
+        text-align: center;
     }
 
 }
