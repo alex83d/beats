@@ -36,7 +36,7 @@
         align-items: flex-start;
         flex: 0 0 35%;
         margin-right: rem(32px);
-        padding-top: 6%;
+        padding-top: 3%;
     }
 
     &__title {
@@ -72,17 +72,21 @@
         &__box {
             flex-direction: column-reverse;
             align-items: center;
+            
         }
 
         &__content {
             align-items: center;
             margin-right: 0;
+            flex: 0 0 35%;
         }
 
         &__img {
             width: rem(323px);
             height: rem(323px);
-            margin-bottom: rem(64px);
+            margin-bottom: 3%;
+            flex: 0 0 50%;
+
         }
 
 
@@ -90,9 +94,16 @@
             text-align: center;
             margin-bottom: rem(5px);
         }
+
+        &__btn {
+            margin-bottom: 0;
+        }
     }
 
     @include phones {
+
+        padding-bottom: rem(72px);
+
 
 
         &__content {

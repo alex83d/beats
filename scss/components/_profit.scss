@@ -3,6 +3,10 @@
     padding-bottom: rem(89px);
     position: relative;
 
+    @include tablets {
+        height: 80%;
+    }
+
     &::before {
         position: absolute;
         content: url("../img/decor/triangle-red.svg");
