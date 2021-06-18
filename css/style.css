@@ -80,7 +80,6 @@ select {
 }
 
 body {
-  height: 100%;
   color: #292929;
   font-family: "Play", "Alegreya Sans", "Open sans";
 }
@@ -93,6 +92,7 @@ body {
 
 .container {
   max-width: 1130px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -271,14 +271,14 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  line-height: 1;
+  line-height: 1.2;
   color: #000000;
   max-width: 37.0625rem;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   .section__title {
-    font-size: 2.5rem;
+    font-size: 8vw;
   }
 }
 
@@ -426,7 +426,19 @@ body {
   background: #F5F5F5;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 54px;
+  padding-bottom: 3.375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 10.8125rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding-bottom: 4.5rem;
+  }
 }
 
 .hero::before {
@@ -438,10 +450,6 @@ body {
           transform: rotate(7deg);
   bottom: -1rem;
   right: 10%;
-}
-
-.hero__container {
-  height: 100%;
 }
 
 .hero__box {
@@ -481,16 +489,16 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  line-height: 1;
+  line-height: 1.2;
   color: #000000;
   text-align: start;
   line-height: 52px;
   margin-bottom: 1.25rem;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   .hero__title {
-    font-size: 2.5rem;
+    font-size: 8vw;
   }
 }
 
@@ -651,6 +659,20 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .profit-section {
+    padding-top: 17.6875rem;
+    padding-bottom: 16.0625rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profit-section {
+    padding-top: 2.3125rem;
+    padding-bottom: 3.375rem;
+  }
+}
+
 .profit-section::before {
   position: absolute;
   content: url("../img/decor/triangle-red.svg");
@@ -673,10 +695,6 @@ body {
           align-items: center;
   font-family: "Play";
   margin-bottom: 4.0625rem;
-}
-
-.headline__title {
-  margin-bottom: 1.125rem;
 }
 
 .headline__subtitle {
@@ -835,6 +853,20 @@ body {
   bottom: -1rem;
   left: 10%;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-section {
+    padding-bottom: 11.25rem;
+    padding-top: 11.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews-section {
+    padding-bottom: 5.125rem;
+    padding-top: 6rem;
+  }
 }
 
 .section__title_reviews {
@@ -1000,19 +1032,20 @@ body {
 
 @media screen and (max-width: 768px) {
   .form-section {
-    padding-bottom: 184px;
+    padding-bottom: 11.5rem;
+    padding-top: 11.3125rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .form-section {
-    padding-bottom: 84px;
+    padding-bottom: 5.25rem;
+    padding-top: 5.4375rem;
   }
 }
 
 .form-title {
   color: #fff;
-  margin-top: 4.25rem;
   margin-bottom: 3.8125rem;
 }
 
@@ -1197,10 +1230,9 @@ body {
 }
 
 .section-map {
-  width: 100%;
-  min-height: 40.75rem;
   background: url(../img/map/map.png) top left no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .footer {
@@ -1213,7 +1245,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 5.375rem;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  background-color: #F8FAF9;
+  padding: 0 10%;
 }
 
 .footer__col {
@@ -1300,7 +1337,7 @@ body {
     display: -ms-inline-flexbox;
     display: inline-flex;
     position: fixed;
-    top: 8%;
+    top: 4%;
     right: 4%;
   }
 }

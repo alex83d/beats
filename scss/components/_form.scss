@@ -16,18 +16,19 @@
         right: 10%;
     }
     @include tablets {
-        padding-bottom: 184px;
+        padding-bottom: rem(184px);
+        padding-top: rem(181px);
     }
     
     @include phones {
-        padding-bottom: 84px;
+        padding-bottom: rem(84px);
+        padding-top: rem(87px);
     }
     
 }
 
 .form-title {
     color: #fff;
-    margin-top: rem(68px);
     margin-bottom: rem(61px);
 }
 

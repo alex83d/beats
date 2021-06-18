@@ -14,6 +14,16 @@
         left: 10%;
         z-index: 1;
     }
+
+    @include tablets {
+        padding-bottom: rem(180px);
+        padding-top: rem(188px);
+    }
+
+    @include phones {
+        padding-bottom: rem(82px);
+        padding-top: rem(96px);
+    }
 }
 
 
@@ -79,7 +89,7 @@
     margin-left: rem(40px);
 
     @include tablets {
-        margin-left: 0;        
+        margin-left: 0;
     }
 }
 

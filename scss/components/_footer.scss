@@ -2,7 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: rem(86px);
+    //height: rem(86px);
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    background-color: $reviews;
+    padding: 0 10%;
+    
 
     
 

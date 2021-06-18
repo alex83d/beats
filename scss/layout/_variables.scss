@@ -43,12 +43,13 @@ $phones: 480px;
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
-    line-height: 1;
+    line-height: 1.2;
     color: #000000;
 
-    @media screen and (max-width:360px) {
-        font-size: rem(40px);        
+    @include tablets {
+        font-size: 8vw;
     }
+
 
      
 }

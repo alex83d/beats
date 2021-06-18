@@ -5,7 +5,15 @@
     background: $back;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 54px;
+    padding-bottom: rem(54px);
+
+    @include tablets {
+        padding-bottom: rem(173px);
+    }
+
+    @include phones {
+        padding-bottom: rem(72px);
+    }
 
 
 
@@ -18,10 +26,6 @@
         transform: rotate(7deg);
         bottom: rem(-16px);
         right: 10%;
-    }
-
-    &__container {
-        height: 100%;
     }
 
     &__box {

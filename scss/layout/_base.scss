@@ -72,7 +72,6 @@ html {
     }
     
     body {
-      height: 100%;
       color: $black;
       font-family: $family_1, $family_2, $famili_3;
     }
@@ -85,6 +84,7 @@ html {
   
     .container {
       max-width: $containerWidth + 30px;
+      height: 100%;
       margin: 0 auto;
       padding: 0 15px;
     }

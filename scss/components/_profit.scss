@@ -3,6 +3,16 @@
     padding-bottom: rem(89px);
     position: relative;
 
+    @include tablets {
+        padding-top: rem(283px);
+        padding-bottom: rem(257px);
+    }
+
+    @include phones {
+        padding-top: rem(37px);
+        padding-bottom: rem(54px);
+    }
+
     &::before {
         position: absolute;
         content: url("../img/decor/triangle-red.svg");
@@ -20,10 +30,6 @@
     align-items: center;
     font-family: $family_1;
     margin-bottom: rem(65px);
-
-    &__title {
-        margin-bottom: rem(18px)
-    }
 
     &__subtitle {
         @include text;
