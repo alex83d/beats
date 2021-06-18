@@ -6,6 +6,7 @@
     margin: 0 auto;
     position: relative;
     padding-bottom: rem(54px);
+    height: 100%;
 
     @include tablets {
         padding-bottom: rem(173px);
@@ -55,6 +56,10 @@
         font-weight: 400;
         font-family: $family_2;
         margin-bottom: rem(36px);
+
+        @include tablets {
+            text-align: center;
+        }
     }
 
     &__btn {

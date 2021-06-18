@@ -92,7 +92,6 @@ body {
 
 .container {
   max-width: 1130px;
-  height: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -411,6 +410,12 @@ body {
   color: #666666;
 }
 
+@media screen and (max-width: 768px) {
+  .features__item p {
+    text-align: center;
+  }
+}
+
 .features a {
   font-size: 2.5625rem;
   margin-right: 0.6875rem;
@@ -427,6 +432,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding-bottom: 3.375rem;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -507,6 +513,12 @@ body {
   font-weight: 400;
   font-family: "Alegreya Sans";
   margin-bottom: 2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__desc {
+    text-align: center;
+  }
 }
 
 .hero__btn {
@@ -706,6 +718,12 @@ body {
   padding: 0 3.4375rem;
 }
 
+@media screen and (max-width: 768px) {
+  .headline__subtitle {
+    text-align: center;
+  }
+}
+
 .desc {
   margin-bottom: 7rem;
 }
@@ -839,6 +857,12 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .desc__text {
+    text-align: center;
+  }
+}
+
 .reviews-section {
   padding-bottom: 3.9375rem;
   padding-top: 4.25rem;
@@ -960,6 +984,12 @@ body {
   font-family: "Play";
   color: #666666;
   margin-bottom: 2.375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    text-align: center;
+  }
 }
 
 .reviews__autor {

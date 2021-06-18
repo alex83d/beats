@@ -59,6 +59,9 @@ $phones: 480px;
     font-weight: 400;
     font-family: $family_1;
     color: $body;
+    @include tablets {
+        text-align: center;
+    }
     
 }
 
