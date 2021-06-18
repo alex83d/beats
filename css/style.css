@@ -131,13 +131,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 4.375rem;
-}
-
-@media screen and (max-width: 480px) {
-  .socials {
-    margin-right: 0;
-  }
 }
 
 .socials__list {
@@ -1280,7 +1273,7 @@ body {
   left: 0%;
   width: 100%;
   background-color: #F8FAF9;
-  padding: 0 10%;
+  padding: 0 3%;
 }
 
 .footer__col {
