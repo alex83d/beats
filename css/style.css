@@ -425,7 +425,6 @@ body {
   margin: 0 auto;
   position: relative;
   padding-bottom: 3.375rem;
-  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -586,9 +585,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.5rem 0;
   margin-bottom: 1.125rem;
 }
@@ -624,6 +623,15 @@ body {
 
 .logo {
   margin-right: 2.375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-right: 0;
+    position: absolute;
+    top: 3%;
+    left: 4%;
+  }
 }
 
 .menu {

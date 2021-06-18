@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: rem(24px) 0;
     margin-bottom: rem(18px);
 
@@ -31,5 +31,12 @@
 
 .logo {
     margin-right: rem(38px);
+
+    @include tablets {
+        margin-right: 0;
+        position: absolute;
+        top: 3%;
+        left: 4%;
+    }
 }
 
