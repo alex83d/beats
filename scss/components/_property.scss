@@ -1,0 +1,27 @@
+.property {
+    &__list {
+        display: inline-flex;
+        margin-bottom: rem(24px);
+
+    }
+
+    &__item {
+        font-family: $family_1;
+
+        &:first-child {
+            margin-right: rem(44px);
+        }
+    }
+
+    &__title {
+        font-size: rem(16px);
+        color: $body;
+        line-height: 1.18;
+    }
+
+    &__desc {
+        font-size: rem(18px);
+        line-height: 1.16;
+        font-weight: 700;
+    }
+}

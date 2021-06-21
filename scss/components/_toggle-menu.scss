@@ -1,0 +1,59 @@
+.toggle-menu {
+    position: relative;
+    display: inline-flex;
+
+    &__icon {
+        width: 91px;
+        height: 91px;
+    }    
+
+    &__list {
+        position: absolute;
+        min-width: rem(273px);
+        top: 0;
+        left: 100%;
+        background: #D5D5D5;
+        ;
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(40px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: rem(4px);
+        padding: rem(15px) rem(14px) rem(21px);
+        font-size: rem(16px);
+        line-height: 1.5;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(8px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__pic {
+        width: rem(32px);
+        height: rem(32px);
+        margin-right: rem(12px);
+        flex-shrink: 0;
+    }
+
+    &__desc {
+        flex-shrink: 0;
+         
+        
+    }
+
+    &__param {
+        white-space: nowrap;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-left: auto;  
+       
+
+    }
+
+
+}

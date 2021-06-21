@@ -1,0 +1,52 @@
+.shop {
+    background: $back;
+
+    &__toggle-menu {
+        margin-bottom: rem(24px);
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: rem(452px);
+        height: rem(452px);
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: rem(59px);
+    }
+
+    &__content {
+        flex: 0 0 45%;
+    }
+
+    &__title {
+        font-family: $family_1;
+        font-weight: bold;
+        font-size: rem(36px);
+        line-height: 1.16;
+        text-transform: uppercase;
+        margin-bottom: rem(24px);
+    }
+
+    &__text {
+        @include text;
+        line-height: 1.18;
+        margin-bottom: rem(24px);
+    }
+
+    &__footer {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price {
+        font-family: $family_1;
+        font-size: rem(36px);
+        line-height: 1.6;
+        margin-right: rem(13px);
+    }
+}

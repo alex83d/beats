@@ -864,6 +864,174 @@ body {
   }
 }
 
+.shop {
+  background: #F5F5F5;
+}
+
+.shop__toggle-menu {
+  margin-bottom: 1.5rem;
+}
+
+.shop__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop__img {
+  width: 28.25rem;
+  height: 28.25rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 3.6875rem;
+}
+
+.shop__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.shop__title {
+  font-family: "Play";
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.16;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.shop__text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Play";
+  color: #666666;
+  line-height: 1.18;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .shop__text {
+    text-align: center;
+  }
+}
+
+.shop__footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop__price {
+  font-family: "Play";
+  font-size: 2.25rem;
+  line-height: 1.6;
+  margin-right: 0.8125rem;
+}
+
+.toggle-menu {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.toggle-menu__icon {
+  width: 91px;
+  height: 91px;
+}
+
+.toggle-menu__list {
+  position: absolute;
+  min-width: 17.0625rem;
+  top: 0;
+  left: 100%;
+  background: #D5D5D5;
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 0.25rem;
+  padding: 0.9375rem 0.875rem 1.3125rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.toggle-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.toggle-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.toggle-menu__pic {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.75rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.toggle-menu__desc {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.toggle-menu__param {
+  white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin-left: auto;
+}
+
+.property__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+}
+
+.property__item {
+  font-family: "Play";
+}
+
+.property__item:first-child {
+  margin-right: 2.75rem;
+}
+
+.property__title {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.18;
+}
+
+.property__desc {
+  font-size: 1.125rem;
+  line-height: 1.16;
+  font-weight: 700;
+}
+
 .reviews-section {
   padding-bottom: 3.9375rem;
   padding-top: 4.25rem;
