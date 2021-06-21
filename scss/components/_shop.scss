@@ -15,11 +15,12 @@
         height: rem(452px);
         border-radius: 50%;
         object-fit: cover;
+        flex-shrink: 0;
         margin-right: rem(59px);
     }
 
     &__content {
-        flex: 0 0 45%;
+        flex: 0 0 40%;
     }
 
     &__title {

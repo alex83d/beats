@@ -887,13 +887,15 @@ body {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-right: 3.6875rem;
 }
 
 .shop__content {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
 }
 
 .shop__title {
@@ -946,6 +948,11 @@ body {
   display: inline-flex;
 }
 
+.toggle-menu:hover > .toggle-menu__list {
+  left: 100%;
+  opacity: 1;
+}
+
 .toggle-menu__icon {
   width: 91px;
   height: 91px;
@@ -955,7 +962,10 @@ body {
   position: absolute;
   min-width: 17.0625rem;
   top: 0;
-  left: 100%;
+  left: -999px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   background: #D5D5D5;
   -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
           box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
@@ -976,6 +986,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.5rem;
+  padding: 0.625rem 0.75rem;
 }
 
 .toggle-menu__item:last-child {

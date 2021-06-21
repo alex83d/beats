@@ -1,6 +1,11 @@
 .toggle-menu {
     position: relative;
     display: inline-flex;
+    &:hover > .toggle-menu__list {
+        left: 100%;
+        opacity: 1;
+    }
+
 
     &__icon {
         width: 91px;
@@ -11,7 +16,9 @@
         position: absolute;
         min-width: rem(273px);
         top: 0;
-        left: 100%;
+        left: -999px;
+        opacity: 0;
+        transition: opacity 0.5s;
         background: #D5D5D5;
         ;
         box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
@@ -27,6 +34,7 @@
         display: flex;
         align-items: center;
         margin-bottom: rem(8px);
+        padding: rem(10px) rem(12px);
 
         &:last-child {
             margin-bottom: 0;
