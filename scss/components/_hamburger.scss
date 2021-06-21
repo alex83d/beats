@@ -1,10 +1,13 @@
 .hamburger {
     width: 26px;
     height: 23px;
-
     flex-direction: column;
     justify-content: space-between;
     display: none;
+
+    &:hover + .menu-bar {
+        transform: translateX(0);
+    }
 
     &__plank {
         display: block;
