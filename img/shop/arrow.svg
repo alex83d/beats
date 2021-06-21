@@ -1,0 +1,8 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 40" id="left">
+    <path d="M19 34L6.914 21.914a2 2 0 010-2.828L19 7" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 40" id="right">
+    <path d="M5 6l12.086 12.086a2 2 0 010 2.828L5 33" stroke="#000" stroke-width="2" stroke-linecap="round"></path>
+  </symbol>
+</svg>

@@ -1,5 +1,30 @@
 .shop {
     background: $back;
+   
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__nav {
+        position: absolute;
+        display: flex;
+        width: 110%;
+        top: 50%;
+        left: -4%;
+        transform: translate-y(-50%);
+        z-index: 2;
+
+        align-items: center;
+        justify-content: space-between;
+
+        &-icon {
+            width: rem(24px);
+            height: rem(40px);
+        }
+    }
+
+
 
     &__toggle-menu {
         margin-bottom: rem(24px);
@@ -50,4 +75,5 @@
         line-height: 1.6;
         margin-right: rem(13px);
     }
+
 }
