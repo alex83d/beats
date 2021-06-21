@@ -9,14 +9,17 @@
     &__nav {
         position: absolute;
         display: flex;
-        width: 110%;
+        width: 104%;
         top: 50%;
         left: -4%;
         transform: translate-y(-50%);
         z-index: 2;
-
         align-items: center;
         justify-content: space-between;
+        @include tablets {
+            left: 0;
+            width: 100%;
+        }
 
         &-icon {
             width: rem(24px);
@@ -33,19 +36,30 @@
     &__item {
         display: flex;
         justify-content: space-between;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__img {
-        width: rem(452px);
-        height: rem(452px);
+        width: 43%;
         border-radius: 50%;
         object-fit: cover;
         flex-shrink: 0;
-        margin-right: rem(59px);
+
+        @include tablets {
+            width: 55%;
+            margin-bottom: rem(49px);
+        }
     }
 
     &__content {
         flex: 0 0 40%;
+        @include tablets {
+            width: 90%;
+        }
     }
 
     &__title {

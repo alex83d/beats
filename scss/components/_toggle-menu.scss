@@ -6,6 +6,10 @@
         opacity: 1;
     }
 
+    @include tablets {
+        display: none;
+    }
+
 
     &__icon {
         width: 91px;
