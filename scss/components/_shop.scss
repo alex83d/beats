@@ -1,5 +1,16 @@
 .shop {
     background: $back;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url("../img/decor/square-black.svg");
+        width: rem(24px);
+        height: rem(24px);
+        bottom: rem(-12px);
+        right: 10%;
+        z-index: 2;
+    }
    
 
     &__wrapper {
