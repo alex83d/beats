@@ -672,8 +672,8 @@ body {
     color: #fff;
     opacity: 2;
     top: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-1000%);
+            transform: translateX(-1000%);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     height: 100vh;
