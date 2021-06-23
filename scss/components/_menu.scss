@@ -34,53 +34,66 @@
 
 
 .menu-bar {
-
-    position: fixed;
-    background: #333537;
-    color: #fff;
-    opacity: 2;
-    top: 0;
-    transform: translateX(-100%);
-    transition: 0.5s;
-    height: 100vh;
-    width: 100%;
-    padding: 30% 5%;
-
-
-
-    &__closebtn {
-        position: absolute;
-        content: url("../img/decor/cross.svg");
-        width: rem(24px);
-        height: rem(24px);
-        top: rem(77px);
-        right: 9%;
-        z-index: 2;
-        &:active + .menu-bar {
-            transform: translateX(-100%);
+    @include tablets {
+        position: fixed;
+        background: #333537;
+        color: #fff;
+        opacity: 2;
+        top: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        height: 100vh;
+        width: 100%;
+        padding: 30% 5%;
+    
+        &_active {
+            position: fixed;
+            background: #333537;
+            color: #fff;
+            opacity: 2;
+            top: 0;
+            transform: translateX(0);
+            transition: 0.5s;
+            height: 100vh;
+            width: 100%;
+            padding: 30% 5%;
+        }
+    
+    
+    
+        &__closebtn {
+            position: absolute;
+            content: url("../img/decor/cross.svg");
+            width: rem(24px);
+            height: rem(24px);
+            top: rem(77px);
+            right: 9%;
+            z-index: 2;
+        }
+    
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__item {
+            width: 300px;
+            text-align: center;
+        }
+    
+    
+        &__link {
+            font-size: rem(36px);
+            font-family: $family_1;
+            line-height: 2;
+            font-weight: 400;
         }
     }
 
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__item {
-        width: 300px;
-        text-align: center;
-    }
-
-
-    &__link {
-        font-size: rem(36px);
-        font-family: $family_1;
-        line-height: 2;
-        font-weight: 400;
-    }
 
 }
 

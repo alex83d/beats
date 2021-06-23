@@ -5,9 +5,9 @@
     justify-content: space-between;
     display: none;
 
-    &:hover + .menu-bar {
-        transform: translateX(0);
-    }
+    //&:hover + .menu-bar {
+       // transform: translateX(0);
+   // }
 
     &__plank {
         display: block;
