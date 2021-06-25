@@ -1,5 +1,7 @@
 //base font-size
-$baseFontSize: 16px;
+$baseFontSize: 18px;
+
+
 
 //container size
 $containerWidth: 1100px;
@@ -27,7 +29,7 @@ $famili_3: "Open sans";
 
 //function px to rem
 @function rem($px) {
-    @return $px / $baseFontSize + 0rem;
+    @return $px / $baseFontSize+0rem;
 }
 
 //breackpoints
@@ -51,7 +53,7 @@ $phones: 480px;
     }
 
 
-     
+
 }
 
 @mixin text {
@@ -59,21 +61,22 @@ $phones: 480px;
     font-weight: 400;
     font-family: $family_1;
     color: $body;
+
     @include tablets {
         text-align: center;
     }
-    
+
 }
 
 
 @mixin tablets {
     @media screen and (max-width: $tablets) {
-        @content;        
+        @content;
     }
 }
 
 @mixin phones {
     @media screen and (max-width: $phones) {
-        @content;        
+        @content;
     }
 }

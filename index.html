@@ -143,18 +143,7 @@
 
         <section class="section shop">
             <div class="container shop__wrapper">
-                <div class="shop__nav">
-                    <a class="shop__nav--left">
-                        <svg class="shop__nav-icon">
-                            <use xlink:href="./img/shop/arrow.svg#left"></use>
-                        </svg>
-                    </a>
-                    <a class="shop__nav--right">
-                        <svg class="shop__nav-icon">
-                            <use xlink:href="./img/shop/arrow.svg#right"></use>
-                        </svg>
-                    </a>
-                </div>
+
                 <div class="shop__slider">
                     <ul class="shop__list">
                         <li class="shop__item">
@@ -248,6 +237,18 @@
 
                         </li>
                     </ul>
+                    <div class="shop__nav">
+                        <a class="shop__nav--left">
+                            <svg class="shop__nav-icon">
+                                <use xlink:href="./img/shop/arrow.svg#left"></use>
+                            </svg>
+                        </a>
+                        <a class="shop__nav--right">
+                            <svg class="shop__nav-icon">
+                                <use xlink:href="./img/shop/arrow.svg#right"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -467,7 +468,7 @@
 
     <nav class="menu-bar" id="menu-bar">
         <a href="#" class="menu-bar__closebtn " id="closebtn"></a>
-        <ul class="menu-bar__list">
+        <ul class="menu-bar__list" id="overlayList">
             <li class="menu-bar__item"><a href="##" class="menu-bar__link">О нас</a></li>
             <li class="menu-bar__item"><a href="##" class="menu-bar__link">Наушники</a></li>
             <li class="menu-bar__item"><a href="##" class="menu-bar__link">Команда</a></li>
@@ -478,21 +479,7 @@
         </ul>
     </nav>
 
-    <script>
-        let overlayButton = document.querySelector('#hamburger');
-        let overlayCloseButton = document.querySelector('#closebtn')
-        let overlayBar = document.querySelector('#menu-bar');
-        overlayButton.addEventListener('click', e => { 
-            e.preventDefault();
-            overlayBar.classList.add('menu-bar_active');
-
-        });
-
-        overlayCloseButton.addEventListener('click', e => { 
-            e.preventDefault();
-            overlayBar.classList.remove('menu-bar_active');
-
-        });
+    <script src="./src/script.js">
     </script>
 
 </body>
