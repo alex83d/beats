@@ -1,6 +1,18 @@
 .shop {
     background: $back;
     position: relative;
+    padding-bottom: rem(94px);
+    padding-top: rem(66px);
+
+    @include tablets {
+        padding-top: rem(93px);
+        padding-bottom: rem(132px);
+    }
+
+    @include phones {
+        padding-top: rem(71px);
+        padding-bottom: rem(131px); 
+    }
 
     &::before {
         position: absolute;
@@ -14,7 +26,7 @@
 
     &__slider {
         position: relative;
-        padding: 0px 60px;
+        padding: 0px 7%;
     }
    
 
@@ -29,22 +41,34 @@
             top: 22%;
         }
 
+        @include phones {
+            top: 15%;
+        }
+
         &--left {
             left: -5%;
             position: inherit;
             display: block;
             @include tablets {
-                left: 10%;
+                left: 15%;
+            }
+
+            @include phones {
+                left: -13%;
             }
             
         }
 
         &--right {
-            right: 5%;
+            right: 10%;
             position: inherit;
             display: block;
             @include tablets {
-                right: 25%;
+                right: 30%;
+            }
+
+            @include phones {
+                right: 2%;
             }
         }
 
@@ -81,12 +105,21 @@
             max-height: rem(306px);
             margin-bottom: rem(49px);
         }
+
+        @include tablets {
+            max-height: 70vw;
+            margin-bottom: rem(26px);
+        }
+
+        @media screen {
+            
+        }
     }
 
     &__content {
         margin-left: rem(42px);
         @include tablets {
-            width: 90%;
+            flex: 0 0 30%;
             text-align: center;
         }
     }

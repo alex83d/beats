@@ -7,13 +7,13 @@ html {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -176,8 +176,8 @@ body {
 
 .socials__icon:hover {
   fill: #292929;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media screen and (max-width: 480px) {
@@ -932,6 +932,22 @@ body {
 .shop {
   background: #F5F5F5;
   position: relative;
+  padding-bottom: 5.22222rem;
+  padding-top: 3.66667rem;
+}
+
+@media screen and (max-width: 768px) {
+  .shop {
+    padding-top: 5.16667rem;
+    padding-bottom: 7.33333rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shop {
+    padding-top: 3.94444rem;
+    padding-bottom: 7.27778rem;
+  }
 }
 
 .shop::before {
@@ -946,7 +962,7 @@ body {
 
 .shop__slider {
   position: relative;
-  padding: 0px 60px;
+  padding: 0px 7%;
 }
 
 .shop__nav {
@@ -965,6 +981,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .shop__nav {
+    top: 15%;
+  }
+}
+
 .shop__nav--left {
   left: -5%;
   position: inherit;
@@ -973,19 +995,31 @@ body {
 
 @media screen and (max-width: 768px) {
   .shop__nav--left {
-    left: 10%;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shop__nav--left {
+    left: -13%;
   }
 }
 
 .shop__nav--right {
-  right: 5%;
+  right: 10%;
   position: inherit;
   display: block;
 }
 
 @media screen and (max-width: 768px) {
   .shop__nav--right {
-    right: 25%;
+    right: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shop__nav--right {
+    right: 2%;
   }
 }
 
@@ -1028,13 +1062,22 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .shop__img {
+    max-height: 70vw;
+    margin-bottom: 1.44444rem;
+  }
+}
+
 .shop__content {
   margin-left: 2.33333rem;
 }
 
 @media screen and (max-width: 768px) {
   .shop__content {
-    width: 90%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
     text-align: center;
   }
 }
