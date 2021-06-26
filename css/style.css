@@ -1230,6 +1230,53 @@ body {
   font-weight: 700;
 }
 
+.team__title {
+  margin-bottom: 2.94444rem;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  max-width: 12.22222rem;
+}
+
+.team__img {
+  height: 16.11111rem;
+  width: 12.22222rem;
+  margin-bottom: 1.38889rem;
+}
+
+.team__wrapper {
+  position: absolute;
+  -webkit-transition: height .2s;
+  transition: height .2s;
+  overflow: hidden;
+  top: 100%;
+  height: 0rem;
+}
+
+.team__content {
+  text-align: center;
+}
+
 .reviews-section {
   padding-bottom: 3.5rem;
   padding-top: 3.77778rem;
@@ -1380,11 +1427,27 @@ body {
   height: 4.11111rem;
   border: 0.22222rem solid transparent;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   overflow: hidden;
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+@media screen and (max-width: 768px) {
+  .interactive-avatar {
+    width: 4.05556rem;
+    height: 4.05556rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .interactive-avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 .interactive-avatar--active {

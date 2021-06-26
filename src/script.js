@@ -1,3 +1,4 @@
+//   Overlay: show, hidden.
 let overlayButton = document.querySelector('#hamburger');
         let overlayCloseButton = document.querySelector('#closebtn');
         let overlayBar = document.querySelector('#menu-bar');

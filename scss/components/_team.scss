@@ -1,0 +1,46 @@
+.team {
+
+
+
+    &__title {
+        margin-bottom: rem(53px);
+    }
+
+    &__list {
+        display: flex;
+    }
+
+
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 0;
+        max-width: rem(220px);
+        //height: 336px;
+    }
+
+    &__img {
+        height: rem(290px);
+        width: rem(220px);
+        margin-bottom: rem(25px);
+    }
+
+    &__wrapper {
+        position: absolute;
+        transition: height .2s;
+        overflow: hidden;
+        top: 100%;
+        height: rem(0px);
+    }
+
+    &__content {
+        text-align: center;
+      
+
+    }
+
+
+}
