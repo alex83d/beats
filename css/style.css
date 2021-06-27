@@ -1256,6 +1256,11 @@ body {
       -ms-flex-positive: 0;
           flex-grow: 0;
   max-width: 12.22222rem;
+  margin-right: 1.11111rem;
+}
+
+.team__item:last-child {
+  margin-right: 0;
 }
 
 .team__img {

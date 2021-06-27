@@ -7,7 +7,13 @@ for (let index = 0; index < buttons.length; index++) {
     console.log(element)
     element.addEventListener('click', ev => {
         ev.preventDefault(); 
-        
+         //open
+         const content = ev.target.nextElementSibling;
+         console.log(content);
+         content.style.maxHeight = "100vh";
+         content.style.overflow = "visible";
+
+        //close sibling
         for (let i = 0; i < buttons.length; i++) {
             const e = buttons[i];
             
@@ -20,11 +26,7 @@ for (let index = 0; index < buttons.length; index++) {
             }
             
         }    
-        
-        const content = ev.target.nextElementSibling;
-        console.log(content);
-        content.style.maxHeight = "100vh";
-        content.style.overflow = "visible";
+       
 
         
 
