@@ -1286,6 +1286,27 @@ body {
           transform: translate(-50%);
 }
 
+.reviews__list {
+  position: relative;
+  min-height: 15.55556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 2sec;
+  transition: 2sec;
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+}
+
 .reviews__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1403,7 +1424,7 @@ body {
   }
 }
 
-.interactive-avatar--active {
+.interactive-avatar.active {
   border-color: #E01F3D;
 }
 

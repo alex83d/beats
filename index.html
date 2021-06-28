@@ -279,9 +279,9 @@
                             <div class="team__content">
                                 <h5 class="team_position">Специалист по упаковке</h5>
                                 <div class="team__desc">
-                                    <p>Автор запоминающегося стиля 
+                                    <p>Автор запоминающегося стиля
                                         наших батончиков.
-                                        </p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +312,7 @@
                             <div class="team__content">
                                 <h5 class="team_position">PR, маркетинг</h5>
                                 <div class="team__desc">
-                                    <p>По&nbsp;всем вопросам сотрудничества 
+                                    <p>По&nbsp;всем вопросам сотрудничества
                                         и&nbsp;рекламы писать только Миле.</p>
                                 </div>
                             </div>
@@ -331,37 +331,84 @@
                 <h2 class="section__title section__title_reviews ">отзывы</h2>
                 <div class="reviews">
                     <div class="reviews__display">
-                        <div class="reviews__display-inner">
-                            <div class="reviews__avatar">
-                                <img src="./img/avatar/billi.svg" alt="" class="reviews__avatar-img">
-                            </div>
-                            <article class="reviews__content">
-                                <h5 class="reviews__title">
-                                    Отличный звук
-                                </h5>
-                                <div class="reviews__text">
-                                    <p>Я&nbsp;ем&nbsp;малыми порциями, но&nbsp;часто.
-                                        Это повышает мою продуктивность в&nbsp;разы.
-                                        В&nbsp;течение дня сижу за&nbsp;компьютером и&nbsp;
-                                        часто отходить в&nbsp;кафе или на&nbsp;кухню просто не&nbsp;могу себе позволить.
-                                        А&nbsp;батончик&nbsp;&mdash; он&nbsp;всегда под рукой.
-                                        Это приятно и&nbsp;удобно.</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__item active" data-linked-with="one">
+                                <div class="reviews__display-inner">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/avatar/billi.svg" alt="" class="reviews__avatar-img">
+                                    </div>
+                                    <article class="reviews__content">
+                                        <h5 class="reviews__title">
+                                            Отличный звук
+                                        </h5>
+                                        <div class="reviews__text">
+                                            <p>Я&nbsp;ем&nbsp;малыми порциями, но&nbsp;часто.
+                                                Это повышает мою продуктивность в&nbsp;разы.
+                                                В&nbsp;течение дня сижу за&nbsp;компьютером и&nbsp;
+                                                часто отходить в&nbsp;кафе или на&nbsp;кухню просто не&nbsp;могу себе
+                                                позволить.
+                                                А&nbsp;батончик&nbsp;&mdash; он&nbsp;всегда под рукой.
+                                                Это приятно и&nbsp;удобно.</p>
+                                        </div>
+                                        <div class="reviews__autor">Билли Айлиш</div>
+                                    </article>
                                 </div>
-                                <div class="reviews__autor">Билли Айлиш</div>
-                            </article>
-                        </div>
+                            </li>
+                            <li class="reviews__item" data-linked-with="two">
+                                <div class="reviews__display-inner">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/avatar/vadim.svg" alt="" class="reviews__avatar-img">
+                                    </div>
+                                    <article class="reviews__content">
+                                        <h5 class="reviews__title">
+                                            Крутой дизайн
+                                        </h5>
+                                        <div class="reviews__text">
+                                            <p>Я&nbsp;ем&nbsp;малыми порциями, но&nbsp;часто. Это повышает мою
+                                                продуктивность в&nbsp;разы. В&nbsp;течение дня сижу за&nbsp;компьютером
+                                                и&nbsp;часто отходить в&nbsp;кафе или на&nbsp;кухню просто не&nbsp;могу
+                                                себе позволить. А&nbsp;батончик&nbsp;&mdash; он&nbsp;всегда под рукой.
+                                                Это приятно и&nbsp;удобно.</p>
+                                        </div>
+                                        <div class="reviews__autor">Вадим Грачев</div>
+                                    </article>
+                                </div>
+                            </li>
+                            <li class="reviews__item" data-linked-with="three">
+                                <div class="reviews__display-inner">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/avatar/mary.svg" alt="" class="reviews__avatar-img">
+                                    </div>
+                                    <article class="reviews__content">
+                                        <h5 class="reviews__title">
+                                            На долго хватает заряда
+                                        </h5>
+                                        <div class="reviews__text">
+                                            <p>Батончики понравились. На&nbsp;мой взгляд слегка завышена цена
+                                                по&nbsp;сравнению с&nbsp;конкурентами, однако, как
+                                                говорится&nbsp;&mdash; оно того стоит. Нравится носить с&nbsp;собой,
+                                                нравится держать в&nbsp;руке. Ну&nbsp;и&nbsp;конечно&nbsp;же, кушать.
+                                                Идеально утоляют голод, хоть и&nbsp;не&nbsp;надолго. Через час уже
+                                                ем&nbsp;ещё один. Но&nbsp;это скорее плюс, чем минус.</p>
+                                        </div>
+                                        <div class="reviews__autor">Мария Орлова</div>
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
+
                     </div>
                     <ul class="reviews__switcher">
-                        <li class="reviews__switcher--item interactive-avatar interactive-avatar--active">
-                            <a href="##" class="interactive-avatar__link">
-                                <img src="./img/avatar/billy.png" alt="user-avatar" class="interactive-avatar__img">
+                        <li class="reviews__switcher--item interactive-avatar active">
+                            <a href="##" class="interactive-avatar__link" data-open="one">
+                                <img src="./img/avatar/billi.svg" alt="user-avatar" class="interactive-avatar__img">
                             </a></li>
                         <li class="reviews__switcher--item interactive-avatar">
-                            <a href="##" class="interactive-avatar__link">
+                            <a href="##" class="interactive-avatar__link" data-open="two">
                                 <img src="./img/avatar/vadim.png" alt="user-avatar" class="interactive-avatar__img">
                             </a></li>
                         <li class="reviews__switcher--item interactive-avatar">
-                            <a href="##" class="interactive-avatar__link">
+                            <a href="##" class="interactive-avatar__link" data-open="three">
                                 <img src="./img/avatar/mary.png" alt="user-avatar" class="interactive-avatar__img">
                             </a></li>
                     </ul>
@@ -551,9 +598,10 @@
             <li class="menu-bar__item"><a href="##" class="menu-bar__link">Контакты</a></li>
         </ul>
     </nav>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./src/script.js"></script>
     <script src="./src/team.js"></script>
+    <script src="./src/tabs.js"></script>
 
 
 </body>
