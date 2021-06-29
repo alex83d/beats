@@ -27,6 +27,15 @@
     &__slider {
         position: relative;
         padding: 0px 7%;
+
+
+        .bx-wrapper {
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+            margin-bottom: 0;
+        }
+
     }
    
 
@@ -38,11 +47,15 @@
         transform: translateY(-50%);
         cursor: pointer;
         @include tablets {
-            top: 22%;
+            top: 30%;
         }
 
         @include phones {
-            top: 15%;
+            top: 25%;
+        }
+
+        @media screen and (max-width: 320px) {
+            top: 20%;
         }
 
         &--left {
@@ -50,7 +63,11 @@
             position: inherit;
             display: block;
             @include tablets {
-                left: 15%;
+                left: 3%;
+            }
+
+            @media screen and (max-width: 670px) {
+                left: -1%;
             }
 
             @include phones {
@@ -64,7 +81,11 @@
             position: inherit;
             display: block;
             @include tablets {
-                right: 30%;
+                right: 15%;
+            }
+
+            @media screen and (max-width: 670px) {
+                right: 10%;
             }
 
             @include phones {
@@ -109,10 +130,6 @@
         @include tablets {
             max-height: 70vw;
             margin-bottom: rem(26px);
-        }
-
-        @media screen {
-            
         }
     }
 

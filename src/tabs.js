@@ -14,4 +14,5 @@ $(".interactive-avatar__link").click((e) => {
     const curItem = $this.closest(".interactive-avatar");
     itemToShow.addClass("active").siblings().removeClass("active");
     curItem.addClass("active").siblings().removeClass("active");
-});     
+});
+    
