@@ -37,10 +37,7 @@ for (let index = 0; index < buttons.length; index++) {
             a.target.firstElementChild.classList.remove("team-arrow--down");
         } else {
             a.target.firstElementChild.classList.add("team-arrow--down");
-        }
-
-        return console.log(a)
-            
+        }      
 
 
     });
