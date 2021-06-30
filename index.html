@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <title>BEATS</title>
 </head>
 
@@ -527,15 +528,19 @@
         </section>
 
         <section class="section team">
-            <div class="container">
+            <div class="container team__container">
                 <h2 class="section__title team__title">команда</h2>
-                <ul class="team__list" id="team__list">
+                <ul class="team__list team__list--desktop" id="team__list">
                     <li class="team__item">
-                        <img src="./img/team/boris.png" alt="member" class="team__img">
-                        <button class="team__subtitle" type="button">Борис Федорович</button>
+                        <img src="./img/team/boris.png"  alt="member" class="team__img">
+
+                        <button class="team__subtitle" type="button">Борис Федорович
+                            <img class="team-arrow" src="../img/team/up.png">
+                        </button>
+                        
                         <div class="team__wrapper">
                             <div class="team__content">
-                                <h5 class="team_position">Главный технолог</h5>
+                                <h5 class=" team__position">Главный технолог</h5>
                                 <div class="team__desc">
                                     <p>Отвечает за&nbsp;вкусовые качества и&nbsp;калорийность.</p>
                                 </div>
@@ -547,10 +552,14 @@
 
                     <li class="team__item">
                         <img src="./img/team/alla.png" alt="member" class="team__img">
-                        <button class="team__subtitle" type="button">Алла Иванова</button>
+
+                        <button class="team__subtitle" type="button">Алла Иванова
+                            <img class="team-arrow" src="../img/team/up.png">
+                            </button>
+
                         <div class="team__wrapper">
                             <div class="team__content">
-                                <h5 class="team_position">Специалист по упаковке</h5>
+                                <h5 class=" team__position">Специалист по упаковке</h5>
                                 <div class="team__desc">
                                     <p>Автор запоминающегося стиля
                                         наших батончиков.
@@ -564,10 +573,14 @@
 
                     <li class="team__item">
                         <img src="./img/team/kirill.png" alt="member" class="team__img">
-                        <button class="team__subtitle" type="button">Кирилл Матросов</button>
+                        <button class="team__subtitle" type="button">Кирилл Матросов<img class="team-arrow"
+                                src="../img/team/up.png">
+                            </button>
+
+
                         <div class="team__wrapper">
                             <div class="team__content">
-                                <h5 class="team_position">Оператор</h5>
+                                <h5 class=" team__position">Оператор</h5>
                                 <div class="team__desc">
                                     <p>Разработал дизан
                                         наушников beats solo&nbsp;3.</p>
@@ -580,10 +593,100 @@
 
                     <li class="team__item">
                         <img src="./img/team/mila.png" alt="member" class="team__img">
-                        <button class="team__subtitle" type="button">Мила Рыжкова</button>
+                        <button class="team__subtitle" type="button">Мила Рыжкова
+                            <img class="team-arrow" src="../img/team/up.png">
+                        </button>
+
+
                         <div class="team__wrapper">
                             <div class="team__content">
-                                <h5 class="team_position">PR, маркетинг</h5>
+                                <h5 class=" team__position">PR, маркетинг</h5>
+                                <div class="team__desc">
+                                    <p>По&nbsp;всем вопросам сотрудничества
+                                        и&nbsp;рекламы писать только Миле.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+                <ul class="team__list team__list--mobile" id="team__list--mobile">
+                    <li class="team__item">
+
+                        <button class="team__subtitle" type="button">Борис Федорович<img class="team-arrow"
+                                src="../img/team/up.png"></button>
+
+
+                        <div class="team__wrapper">
+                            <img src="./img/team/boris.png" alt="member" class="team__img">
+                            <div class="team__content">
+                                <h5 class=" team__position">Главный технолог</h5>
+                                <div class="team__desc">
+                                    <p>Отвечает за&nbsp;вкусовые качества и&nbsp;калорийность.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="team__item">
+
+                        <button class="team__subtitle" type="button">Алла Иванова
+                            <img class="team-arrow" src="../img/team/up.png">
+                        </button>
+
+
+                        <div class="team__wrapper">
+                            <img src="./img/team/alla.png" alt="member" class="team__img">
+                            <div class="team__content">
+                                <h5 class=" team__position">Специалист по упаковке</h5>
+                                <div class="team__desc">
+                                    <p>Автор запоминающегося стиля
+                                        наших батончиков.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="team__item">
+
+                        <button class="team__subtitle" type="button">Кирилл Матросов<img class="team-arrow"
+                                src="../img/team/up.png">
+                        </button>
+
+
+                        <div class="team__wrapper">
+                            <img src="./img/team/kirill.png" alt="member" class="team__img">
+                            <div class="team__content">
+                                <h5 class=" team__position">Оператор</h5>
+                                <div class="team__desc">
+                                    <p>Разработал дизан
+                                        наушников beats solo&nbsp;3.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="team__item">
+
+                        <button class="team__subtitle" type="button">Мила Рыжкова<img class="team-arrow"
+                                src="../img/team/up.png">
+                        </button>
+
+
+                        <div class="team__wrapper">
+                            <img src="./img/team/mila.png" alt="member" class="team__img">
+                            <div class="team__content">
+                                <h5 class=" team__position">PR, маркетинг</h5>
                                 <div class="team__desc">
                                     <p>По&nbsp;всем вопросам сотрудничества
                                         и&nbsp;рекламы писать только Миле.</p>
@@ -872,7 +975,7 @@
             <li class="menu-bar__item"><a href="##" class="menu-bar__link">Контакты</a></li>
         </ul>
     </nav>
-     
+
     <div class="modal" id="modal">
         <div class="modal__container">
             <div class="modal__content"></div>

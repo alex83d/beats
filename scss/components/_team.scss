@@ -6,11 +6,39 @@
 
     &__title {
         margin-bottom: rem(53px);
+
+        @include tablets {
+            margin-bottom: rem(33px);
+        }
+
+        @include tablets {
+            margin-bottom: rem(36px);
+        }
     }
 
     &__list {
-        display: flex;
+
+        &--desktop {
+            display: flex;
+
+            @include tablets {
+                display: none;
+            }
+        }
+
+
+        &--mobile {
+            display: none;
+
+            @include tablets {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
     }
+
 
 
 
@@ -19,6 +47,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         flex-grow: 0;
         max-width: rem(220px);
         margin-right: rem(20px);
@@ -27,12 +56,61 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @include tablets {
+            max-width: rem(222px);
+            margin-right: 0;
+            margin-bottom: rem(16px);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
+
+    &__subtitle {
+        font-family: $family_1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(18px);
+
+        @include tablets {
+            font-family: $family_2;
+            font-size: rem(21px);
+            position: relative;
+        }
+    }
+
+    &-arrow {
+        position: absolute;
+        right: 3%;
+        bottom: 2%;
+        width: 9px;
+        height: 9px;
+        
+        @include tablets {
+            right: -7%;
+            bottom: 25%;
+        }
+        
+    }
+
+    .team-arrow--down {
+        transform: rotate(180deg);
+    }
+
+  
+
+
 
     &__img {
         height: rem(290px);
-        width: rem(220px);
+        width: rem(222px);
         margin-bottom: rem(25px);
+
+        @include tablets {
+            margin-bottom: rem(21px);
+        }
     }
 
     &__wrapper {
@@ -41,20 +119,52 @@
         overflow: hidden;
         top: 100%;
         height: rem(0px);
+        z-index: 2;
+
+        @include tablets {
+            position: relative;
+        }
+
 
         &--active {
             position: absolute;
             top: 100%;
-            max-height: 100vh;
+            min-height: 100vh;
             overflow: visible;
             padding: 24px 0 27px 0;
+
+            @include tablets {
+                position: relative;
+                min-height: 36vh;
+            }
+
+            @include tablets {
+                position: relative;
+                min-height: 45vh;
+            }
         }
     }
 
+   
+
     &__content {
         text-align: center;
-
     }
+
+    &__position {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.16;
+        margin-bottom: rem(6px);
+    }
+
+    &__desc {
+        font-size: rem(16px);
+        line-height: 1.18;
+        color: $body;
+    }
+
+
 
 
 }
