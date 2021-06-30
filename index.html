@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/style.css">
     
     <title>BEATS</title>
@@ -695,15 +696,16 @@
                 <h2 class="section__title form-title">закажите доставку</h2>
 
                 <form class="form">
+                    <input type="hidden" name="to" value="somewhere@mail.com">
                     <div class="form__col">
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Имя</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="name">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="phone">
                             </label>
 
                         </div>
@@ -711,26 +713,26 @@
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Улица</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="street">
                             </label>
                         </div>
 
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Дом</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="home">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Корпус</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="part">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Квартира</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="appartment">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Этаж</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="floor">
                             </label>
                         </div>
                     </div>
@@ -870,12 +872,24 @@
             <li class="menu-bar__item"><a href="##" class="menu-bar__link">Контакты</a></li>
         </ul>
     </nav>
+     
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__content"></div>
+            <div class="modal__button-container">
+                <a href="##" class="btn app-submit-btn modal__btn">закрыть</a>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./src/slider.js"></script>
     <script src="./src/script.js"></script>
     <script src="./src/team.js"></script>
     <script src="./src/tabs.js"></script>
+    <script src="./src/modal.js"></script>
 
 
 </body>

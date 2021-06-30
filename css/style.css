@@ -1614,6 +1614,10 @@ body {
           justify-content: center;
 }
 
+.input-error {
+  border-color: #ec379b;
+}
+
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1869,5 +1873,46 @@ body {
   font-family: "Play";
   line-height: 2;
   font-weight: 400;
+}
+
+.modal {
+  display: none;
+  max-width: 309px;
+}
+
+.modal__container {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 37px 54px;
+}
+
+.modal__content {
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Play";
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.fancybox-button {
+  display: none;
+}
+
+.fancybox-content {
+  padding: 0;
+}
+
+.error-modal {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
