@@ -2,7 +2,6 @@ const teamList = document.getElementById('#team__list');
 const buttons = document.querySelectorAll('.team__subtitle');
 const teamWrap = document.querySelectorAll('.team__wrapper');
 const arrow = document.querySelectorAll('.team-arrow')
-console.log(buttons);
 
 
 for (let index = 0; index < buttons.length; index++) {
