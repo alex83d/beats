@@ -14,6 +14,7 @@ const validateFields = (form, fieldArray) => {
 
 $('.form').submit((e) => {
     e.preventDefault();
+    
 
     const form = $(e.currentTarget);
     const name = form.find("[name = 'name']");
@@ -46,8 +47,8 @@ $('.form').submit((e) => {
         });
 
         request.done((data) => {
-            content.text(data.message)
-            //console.log(data);
+            content.text(data.message);
+            e.target.reset();
         });
 
         request.fail((data) => {
