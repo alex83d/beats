@@ -1,7 +1,12 @@
 .section-map {
-    background: url(../img/map/map.png)top left no-repeat;
-    background-size: cover;
+    //background: url(../img/map/map.png)top left no-repeat;
+    //background-size: cover;
     position: relative;
     
 
+}
+
+#map {
+    width: 100%;
+    min-height: 100vh;
 }
