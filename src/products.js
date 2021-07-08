@@ -5,7 +5,9 @@ const mesureWidth = (item) => {
     const titlesBlocks = container.find(".products__title");
     const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
-    const textcontainer = item.find(".products__container")
+    const textContainer = item.find(".products__container");
+    const paddingLeft = parseInt(textContainer.css("padding-left"));
+    const paddingRight = parseInt(textContainer.css("padding-right"));
 
     const isMobile = window.matchMedia("(max-width:768px)").matches;
 
@@ -17,7 +19,7 @@ const mesureWidth = (item) => {
 
     return {
         container: reqItemWidth,
-        textContainer: ""
+        textContainer: reqItemWidth - paddingLeft - paddingRight
     }
 
     
@@ -31,12 +33,14 @@ const closeEveryItemInContainer = (container) => {
     content.width(0);
 }
 
-const openItem = item => {
+const openItem = (item) => {
     const hiddenContent = item.find(".products__content");
     const reqWidth = mesureWidth(item);
+    const textBlock = item.find(".products__container")
 
     item.addClass("active");
     hiddenContent.width(reqWidth.container);
+    textBlock.width(reqWidth.textContainer);
 }
 
 
