@@ -213,6 +213,7 @@ body {
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
           mask-position: center;
+  border: none;
   background-color: #292929;
   -webkit-mask-image: url("../img/tel.svg");
           mask-image: url("../img/tel.svg");
@@ -1460,16 +1461,6 @@ body {
 
 .products__close {
   position: absolute;
-  content: url("../img/decor/cross.svg");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  max-width: 11%;
-  min-height: 1.33333rem;
   top: 20px;
   right: 25px;
   border: none;

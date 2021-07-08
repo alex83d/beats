@@ -69,12 +69,6 @@
 
     &__close {
         position: absolute;
-        content: url("../img/decor/cross.svg");
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-        max-width: 11%;
-        min-height: rem(24px);
         top: 20px;
         right: 25px;
         border: none;
