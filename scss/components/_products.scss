@@ -2,7 +2,7 @@
     background-image: url('../img/products/products.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position-x: 75%;
     color: $white;
     position: relative;
 
@@ -33,7 +33,7 @@
 
     &__title {
         position: relative;
-        width: 100px;
+        width: rem(100px);
         bottom: -95%;
         padding-top: rem(28px);
         padding-bottom: rem(34px);
@@ -44,6 +44,11 @@
         font-family: $family_2;
         font-weight: bold;
         white-space: nowrap;
+
+        @include tablets {
+            width: rem(90px);
+            padding-top: rem(10px);
+        }
     }
 
 
@@ -68,8 +73,8 @@
         display: flex;
         align-items: center;
         background-color: transparent;
-        width: rem(24px);
-        height: rem(24px);
+        max-width: 11%;
+        min-height: rem(24px);
         top: 20px;
         right: 25px;
         border: none;

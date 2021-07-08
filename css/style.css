@@ -1386,7 +1386,7 @@ body {
   background-image: url("../img/products/products.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position-x: 75%;
   color: #ffffff;
   position: relative;
 }
@@ -1421,7 +1421,7 @@ body {
 
 .products__title {
   position: relative;
-  width: 100px;
+  width: 5.55556rem;
   bottom: -95%;
   padding-top: 1.55556rem;
   padding-bottom: 1.88889rem;
@@ -1434,6 +1434,13 @@ body {
   font-family: "Alegreya Sans";
   font-weight: bold;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .products__title {
+    width: 5rem;
+    padding-top: 0.55556rem;
+  }
 }
 
 .products__content {
@@ -1461,8 +1468,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
-  width: 1.33333rem;
-  height: 1.33333rem;
+  max-width: 11%;
+  min-height: 1.33333rem;
   top: 20px;
   right: 25px;
   border: none;
