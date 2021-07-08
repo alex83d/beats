@@ -32,7 +32,7 @@
     }
 
     &__title {
-        position: relative;        
+        position: relative;
         width: 100px;
         bottom: -95%;
         padding-top: rem(28px);
@@ -40,6 +40,7 @@
         transform-origin: 0 0;
         transform: rotate(270deg);
         font-size: 36px;
+        line-height: 1.19;
         font-family: $family_2;
         font-weight: bold;
         white-space: nowrap;
@@ -63,10 +64,16 @@
 
     &__close {
         position: absolute;
+        content: url("../img/decor/cross.svg");
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        width: rem(24px);
+        height: rem(24px);
         top: 20px;
         right: 25px;
         border: none;
-        background: transparent;
+        z-index: 2;
     }
 
     & p {
