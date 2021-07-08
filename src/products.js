@@ -1,15 +1,23 @@
 const mesureWidth = (item) => {
+    let reqItemWidth = 0;
     const screenWidth = $(window).width();
     const container = item.closest(".products__list");
     const titlesBlocks = container.find(".products__title");
     const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
+    const textcontainer = item.find(".products__container")
+
     const isMobile = window.matchMedia("(max-width:768px)").matches;
 
     if (isMobile) {
-        return screenWidth - titlesWidth;
+        reqItemWidth = screenWidth - titlesWidth;
     } else {
-        return 500;
+        reqItemWidth = 500;
+    }
+
+    return {
+        container: reqItemWidth,
+        textContainer: ""
     }
 
     
@@ -28,7 +36,7 @@ const openItem = item => {
     const reqWidth = mesureWidth(item);
 
     item.addClass("active");
-    hiddenContent.width(reqWidth);
+    hiddenContent.width(reqWidth.container);
 }
 
 
