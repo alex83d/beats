@@ -1473,6 +1473,9 @@ body {
 
 .section__title_products {
   color: #ffffff;
+  position: absolute;
+  left: 84px;
+  top: 115px;
 }
 
 .reviews-section {
