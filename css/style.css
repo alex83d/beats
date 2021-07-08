@@ -1405,9 +1405,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .products__item:nth-child(1) {
@@ -1425,8 +1422,9 @@ body {
 .products__title {
   position: relative;
   width: 100px;
-  left: calc(50% - 466px/2 + 211px);
-  bottom: -9px;
+  bottom: -95%;
+  padding-top: 1.55556rem;
+  padding-bottom: 1.88889rem;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: rotate(270deg);

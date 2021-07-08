@@ -17,7 +17,6 @@
 
     &__item {
         display: flex;
-        align-items: flex-end;
 
         &:nth-child(1) {
             background: #999999;
@@ -33,11 +32,11 @@
     }
 
     &__title {
-        position: relative;
-        
+        position: relative;        
         width: 100px;
-        left: calc(50% - 466px/2 + 211px);
-        bottom: -9px;
+        bottom: -95%;
+        padding-top: rem(28px);
+        padding-bottom: rem(34px);
         transform-origin: 0 0;
         transform: rotate(270deg);
         font-size: 36px;
