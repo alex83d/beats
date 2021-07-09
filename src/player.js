@@ -51,6 +51,11 @@ const setVideoTime = () => {
 };
 
 const updateTime = () => {
-    durationControl.value = video.currentTime;    
-};
+    durationControl.value = video.currentTime;
+    const step = video.duration / 100;
+    const percent = video.currentTime / step;
 
+    durationControl
+        .style
+        .background = `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${percent}%, #333333 ${percent}% )`;
+};

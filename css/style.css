@@ -2359,7 +2359,8 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 1px;
-  background: #333333;
+  background: -webkit-gradient(linear, left top, right top, from(#E01F3D), color-stop(0%, #E01F3D), color-stop(0%, #333333));
+  background: linear-gradient(90deg, #E01F3D 0%, #E01F3D 0%, #333333 0%);
   -webkit-appearance: none;
   -moz-appearance: 0;
        appearance: 0;
