@@ -1,0 +1,45 @@
+.sound {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: rem(42px);
+    &::before {
+        content: '';
+        display: block;
+        width: 29px;
+        height: 3px;
+        background-color: $red;
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%) rotate(42deg);
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.4ms;
+        
+    }
+
+    &.active {
+          &::before{
+              opacity: 1;
+          }  
+    }
+
+    &__btn {
+        border: 0;
+        background: transparent;
+        padding: 0;
+    }
+
+    &__pic {
+        width: 36px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    &__volume {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

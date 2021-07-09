@@ -1,0 +1,37 @@
+.duration {
+    display: flex;
+    flex: 1;
+    align-items: center;
+   
+    
+    &__btn-wrap {
+        display: flex;
+        align-items: center;
+        width: 24px;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        height: 0;
+        width: 0; 
+        border: 10px solid transparent;      
+        border-left-color: #ffff;
+        border-right-width: 0;        
+        background: transparent;
+        outline: 0;
+
+        &--active {
+            border: 7px solid #fff;
+            height: 20px;
+            border-top: 0;
+            border-bottom: 0;
+            padding: 1px;
+        }
+    }
+
+    &__length-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -27,13 +27,20 @@
                             </div>
                             <nav class="menu header-menu">
                                 <ul class="menu__list">
-                                    <li class="menu__item"><a data-scroll-to="hero" href="##" class="menu__link">О нас</a></li>
-                                    <li class="menu__item"><a data-scroll-to="shop" href="##" class="menu__link">Наушники</a></li>
-                                    <li class="menu__item"><a data-scroll-to="team" href="##" class="menu__link">Команда</a></li>
-                                    <li class="menu__item"><a data-scroll-to="products" href="##" class="menu__link">Цвета</a></li>
-                                    <li class="menu__item"><a data-scroll-to="revievs" href="##" class="menu__link">Отзывы</a></li>
-                                    <li class="menu__item"><a data-scroll-to="player" href="##" class="menu__link">Как мы работаем</a></li>
-                                    <li class="menu__item"><a data-scroll-to="map" href="##" class="menu__link">Контакты</a></li>
+                                    <li class="menu__item"><a data-scroll-to="hero" href="##" class="menu__link">О
+                                            нас</a></li>
+                                    <li class="menu__item"><a data-scroll-to="shop" href="##"
+                                            class="menu__link">Наушники</a></li>
+                                    <li class="menu__item"><a data-scroll-to="team" href="##"
+                                            class="menu__link">Команда</a></li>
+                                    <li class="menu__item"><a data-scroll-to="products" href="##"
+                                            class="menu__link">Цвета</a></li>
+                                    <li class="menu__item"><a data-scroll-to="revievs" href="##"
+                                            class="menu__link">Отзывы</a></li>
+                                    <li class="menu__item"><a data-scroll-to="player" href="##" class="menu__link">Как
+                                            мы работаем</a></li>
+                                    <li class="menu__item"><a data-scroll-to="map" href="##"
+                                            class="menu__link">Контакты</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -985,8 +992,37 @@
                     <div class="player-section__container">
                         <div class="player">
                             <div class="player__wrapper">
+                                <video src="./img/player/farrell.mp4" id="video" class="player__window" poster="./img/player/player-bg.png"></video>
+                                
+                                <button class="player__img">
+                                    <img src="./img/player/play.svg" alt="play" class="player__btn-img play">
+                                </button>
 
                             </div>
+                            <div class="player__toolbar">
+                                <div class="duration">
+                                    <div class="duration__btn-wrap">
+                                        <button class="duration__img play">
+                                        </button>
+                                    </div>
+                                    <div class="duration__length-wrap">
+                                        <input type="range" class="duration__length duration-length" id="durationLevel">
+                                    </div>
+
+                                    <div class="sound">
+                                        <button class="sound__btn">
+                                            <img src="./img/player/speaker.svg" alt="speaker" class="sound__pic">
+                                        </button>
+                                        <div class="sound__volume">
+                                            <input type="range" class="sound__length duration-length" id="volLevel">
+                                        </div>
+                                            
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+
                         </div>
                     </div>
 
@@ -1073,7 +1109,7 @@
             <li class="fixed-menu__item"><a data-scroll-to="team" href="##" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a data-scroll-to="products" href="##" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a data-scroll-to="revievs" href="##" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a data-scroll-to="form"  href="##" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a data-scroll-to="form" href="##" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a data-scroll-to="player" href="##" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a data-scroll-to="map" href="##" class="fixed-menu__link"></a></li>
         </ul>
@@ -1093,7 +1129,8 @@
             <li class="menu-bar__item"><a data-scroll-to="team" href="##" class="menu-bar__link">Команда</a></li>
             <li class="menu-bar__item"><a data-scroll-to="products" href="##" class="menu-bar__link">Цвета</a></li>
             <li class="menu-bar__item"><a data-scroll-to="revievs" href="##" class="menu-bar__link">Отзывы</a></li>
-            <li class="menu-bar__item"><a data-scroll-to="player" href="##" class="menu-bar__link">Как мы работаем</a></li>
+            <li class="menu-bar__item"><a data-scroll-to="player" href="##" class="menu-bar__link">Как мы работаем</a>
+            </li>
             <li class="menu-bar__item"><a data-scroll-to="maps" href="##" class="menu-bar__link">Контакты</a></li>
         </ul>
     </nav>
@@ -1111,6 +1148,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./src/jquery.touchSwipe.min.js"></script>
     <script src="./src/mobile-detect.min.js"></script>
     <script src="./src/ops.js"></script>
@@ -1120,8 +1158,9 @@
     <script src="./src/team.js"></script>
     <script src="./src/tabs.js"></script>
     <script src="./src/modal.js"></script>
+    <script src="./src/player.js"></script>
     <script src="./src/map.js"></script>
-    
+
 
 
 </body>
