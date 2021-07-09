@@ -8,7 +8,14 @@ let inScroll = false;
 section.first().addClass("active");
 
 const countSectionPosition = sectionEq => {
-    return sectionEq * -100;
+    const position = sectionEq * -100;
+
+    if (isNaN(position)) {
+        console.error("передано не верное значение в countSectionPosition");
+        return 0;
+    }
+
+    return position;
 };
 
 const changeMenuThemeForSection = sectionEq => {
@@ -30,7 +37,9 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 }
 
 const perfomTransition = sectionEq => {
-    if (inScroll === false) {
+    if (inScroll) return;
+    const transitionOver = 1000;
+    const mouseInertionOver = 300;
         inScroll = true;
         const position = countSectionPosition(sectionEq);
 
@@ -45,52 +54,67 @@ const perfomTransition = sectionEq => {
         setTimeout(() => {
             inScroll = false;
             resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
-        }, 1300);
+        }, transitionOver + mouseInertionOver);
 
-    }
+    
 
 
-}
+};
 
-const scrollViewport = direction => {
+const viewportScroller = () => {
     const activeSection = section.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
-    if (direction === "next" && nextSection.length) {
-        perfomTransition(nextSection.index());
-    }
+    return {
+        next() {
+            if (nextSection.length) {
+                perfomTransition(nextSection.index());
+            }
 
-    if (direction === "prev" && prevSection.length) {
-        perfomTransition(prevSection.index());
-    }
-}
+        },
+        prev(){
+            if (prevSection.length) {
+                perfomTransition(prevSection.index());
+            }
+            
+        },
+    }; 
+
+   
+};
 
 $(window).on("wheel", e => {
     const deltaY = e.originalEvent.deltaY; //величина смещения.
+    const scroller = viewportScroller();
+
+ 
 
     if (deltaY > 0) {
         //next
-        scrollViewport("next");
+        scroller.next();
     }
 
     if (deltaY < 0) {
         //prev
-        scrollViewport("prev");
+        scroller.prev();
     }
 });
 
 $(window).on("keydown", e => {
     const tagName = e.target.tagName.toLowerCase();
-    if (tagName != "input" && tagName != "textarea") {
+    const userTypingInInputs = tagName === "input" || tagName === "textarea";
+    const scroller = viewportScroller();
+
+    if (userTypingInInputs) return;
         switch (e.keyCode) {
             case 38: //prev
-                scrollViewport("prev");
+                scroller.prev();
                 break;
             case 40: //next
-                scrollViewport("next");
+                scroller.next();
                 break;
-        }
+        
     }
 
 
