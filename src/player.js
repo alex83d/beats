@@ -21,7 +21,9 @@ for (let i = 0; i < playButtons.length; i++) {
 function playStop() {
     if (video.paused) {
         video.play();
+        playerPlayBtn.classList.add('duration__img--active');
     } else {
         video.pause();
+        playerPlayBtn.classList.remove('duration__img--active');
     }
 };
