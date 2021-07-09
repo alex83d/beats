@@ -2312,14 +2312,21 @@ body {
   margin-left: 2.33333rem;
 }
 
-.sound::before {
+.sound__btn {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+}
+
+.sound__btn::before {
   content: '';
   display: block;
   width: 29px;
   height: 3px;
   background-color: #E01F3D;
   position: absolute;
-  left: 4px;
+  left: 1px;
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(42deg);
           transform: translateY(-50%) rotate(42deg);
@@ -2329,20 +2336,13 @@ body {
   transition: opacity 0.4ms;
 }
 
-.sound.active::before {
+.sound__btn.active::before {
   opacity: 1;
-}
-
-.sound__btn {
-  border: 0;
-  background: transparent;
-  padding: 0;
 }
 
 .sound__pic {
   width: 36px;
   height: 20px;
-  cursor: pointer;
 }
 
 .sound__volume {
