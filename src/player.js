@@ -36,7 +36,7 @@ video.addEventListener('loadeddata', () => {
     soundControl.addEventListener('input', changeSoundVolume);
     soundControl.min = 0;
     soundControl.max = 10;
-    soundControl.value = soundControl.max / 5;
+    soundControl.value = 5;
 
 });
 
