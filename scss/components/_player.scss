@@ -18,6 +18,9 @@
 
     &-title {
         margin-bottom: rem(44px);
+        @include tablets {
+            margin-bottom: rem(40px);
+        }
     }
 
     &__wrapper {

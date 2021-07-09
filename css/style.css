@@ -2194,6 +2194,12 @@ body {
   margin-bottom: 2.44444rem;
 }
 
+@media screen and (max-width: 768px) {
+  .player-title {
+    margin-bottom: 2.22222rem;
+  }
+}
+
 .player__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
