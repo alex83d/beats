@@ -1,8 +1,12 @@
 .fixed-menu {
     position: fixed;
-    top: rem(211px);
-    right: rem(46px);
+    top: 20%;
+    right: 3%;
     z-index: $z_fixed-menu;
+
+    &--light .fixed-menu__link::before {
+        background: $white;
+    }
 
     @include tablets {
         display: none; 
@@ -46,7 +50,7 @@
             transform: translate(-50%, -50%);
             height: rem(9px);
             width: rem(9px);
-            border-radius: 50%;
+            border-radius: 100%;
             background: $black;
             opacity: 0.6;
         }
@@ -60,6 +64,19 @@
             
             &::before {
                 background: $red;
+            }
+        }
+        
+    }
+}
+
+.fixed-menu--light {
+    .fixed-menu__item--active {
+        .fixed-menu__link {
+            border-color: #fff;
+            
+            &::before {
+                background: #fff;
             }
         }
         

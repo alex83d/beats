@@ -285,9 +285,13 @@ body {
 
 .fixed-menu {
   position: fixed;
-  top: 11.72222rem;
-  right: 2.55556rem;
+  top: 20%;
+  right: 3%;
   z-index: 100;
+}
+
+.fixed-menu--light .fixed-menu__link::before {
+  background: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -341,7 +345,7 @@ body {
           transform: translate(-50%, -50%);
   height: 0.5rem;
   width: 0.5rem;
-  border-radius: 50%;
+  border-radius: 100%;
   background: #292929;
   opacity: 0.6;
 }
@@ -352,6 +356,14 @@ body {
 
 .fixed-menu__item--active .fixed-menu__link::before {
   background: #E01F3D;
+}
+
+.fixed-menu--light .fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu--light .fixed-menu__item--active .fixed-menu__link::before {
+  background: #fff;
 }
 
 @font-face {

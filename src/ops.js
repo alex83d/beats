@@ -10,17 +10,40 @@ const perfomTransition = sectionEq => {
         inScroll = true;
         const position = sectionEq * -100;
 
+        const currentSection = section.eq(sectionEq);
+        const menuTheme = currentSection.attr("data-sidemenu-theme");
+        const sideMenu = $(".fixed-menu");
+        
+        if (menuTheme === "white") {
+            sideMenu.addClass("fixed-menu--light");
+
+        } else {
+            sideMenu.removeClass("fixed-menu--light");
+        }
+
         display.css({
             transform: `translateY(${position}%)`
         });
 
+
+        section.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
+    
+
+        setTimeout(() => {
+            inScroll = false;
+            sideMenu
+              .find(".fixed-menu__item")
+              .eq(sectionEq)
+              .addClass("fixed-menu__item--active")
+              .siblings()
+              .removeClass("fixed-menu__item--active");  
+    
+        }, 1300);
+
     }
 
-    section.eq(sectionEq).addClass("active").siblings().removeClass("active");
-
-    setTimeout(() => {
-        inScroll = false;
-    }, 1300);
+   
 }
 
 const scrollViewport = direction => {
