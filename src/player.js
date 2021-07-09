@@ -37,10 +37,11 @@ function playStop() {
     if (video.paused) {
         video.play();
         playerPlayBtn.classList.add('duration__img--active');
-        updateTime();
+        intervalId = setInterval(updateTime, 1000 / 60);
     } else {
         video.pause();
         playerPlayBtn.classList.remove('duration__img--active');
+        clearInterval(intervalId);
     }
 };
 
@@ -50,7 +51,6 @@ const setVideoTime = () => {
 };
 
 const updateTime = () => {
-    durationControl.value = video.currentTime;
-    
+    durationControl.value = video.currentTime;    
 };
 
