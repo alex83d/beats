@@ -16,6 +16,10 @@
     height: 100%;
     background: $black;
 
+    &-title {
+        margin-bottom: rem(44px);
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;

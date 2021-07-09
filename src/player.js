@@ -19,7 +19,9 @@ for (let i = 0; i < playButtons.length; i++) {
 }
 
 function playStop() {
-    if (video.paused) {
+
+    playBtn.classList.toggle("player__btn-img--active");
+    if (video.paused) {        
         video.play();
         playerPlayBtn.classList.add('duration__img--active');
     } else {
