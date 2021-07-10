@@ -2215,7 +2215,7 @@ body {
   max-height: 21.72222rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .player__wrapper {
     width: 100%;
   }

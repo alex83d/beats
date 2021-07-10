@@ -30,7 +30,7 @@
         align-items: flex-start;
         width: rem(662px);
         max-height: rem(391px);
-        @include phones {
+        @include tablets {
            width: 100%; 
         }
     }
