@@ -28,7 +28,7 @@ video.addEventListener('loadeddata', () => {
     durationControl.max = video.duration;
     durationControl.addEventListener('input', setVideoTime);
 
-    
+
     soundBtn.addEventListener('click', soundOff);
 
 
@@ -36,7 +36,9 @@ video.addEventListener('loadeddata', () => {
     soundControl.addEventListener('input', changeSoundVolume);
     soundControl.min = 0;
     soundControl.max = 10;
-    soundControl.value = 5;
+    soundControl.value = 2;
+
+
 
 });
 
@@ -45,6 +47,12 @@ video.addEventListener('ended', function () {
     video.currentTime = 0;
     playerPlayBtn.classList.remove('duration__img--active');
 });
+
+function bg(e) { 
+    let position = e * 100;      
+    soundControl.style.background =
+        `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${position}%, #333333 ${position}% )`;
+};
 
 
 
@@ -78,13 +86,16 @@ const updateTime = () => {
 };
 
 const soundOff = () => {
-    if(video.volume === 0) {
+
+    if (video.volume === 0) {
         video.volume = soundLevel;
         soundControl.value = soundLevel * 10;
+        bg(video.volume);
         soundBtn.classList.remove('active');
     } else {
         soundLevel = video.volume;
         video.volume = 0;
+        bg(video.volume);
         soundControl.value = 0;
         soundBtn.classList.add('active');
     }
@@ -95,7 +106,54 @@ const changeSoundVolume = () => {
 
     if (video.volume === 0) {
         soundBtn.classList.add('active');
+        bg(video.volume);
     } else {
         soundBtn.classList.remove('active');
+        bg(video.volume);
     }
-}
+};
+
+/*$(function () {
+    const range = $('#volumeLevel');
+    let position;
+    
+    
+
+    const soundBtnActive = $("#mic");
+    const observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            if (mutation.attributeName === "class") {
+               let soundBtnClass = $(mutation.target).prop(mutation.attributeName);
+               if ($(soundBtnClass).hasClass('.active')) {
+                    $(position) = 0;
+                    bg(position);
+               }
+            }
+        });
+    });
+    observer.observe(soundBtnActive[0], {
+        attributes: true
+    });
+
+   
+
+    range.on('mouseenter', function () {
+
+        range.on('click', function () {
+            position = range.val() * 10;
+            bg(position);
+        });
+        range.on('mousemove', function () {
+            position = range.val() * 10;
+            bg(position);
+        });
+
+    });
+
+
+    function bg() {       
+        range.css({
+            'background-image': `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${position}%, #333333 ${position}% )`
+        });
+    };
+});*/

@@ -5,7 +5,7 @@
     z-index: $z_fixed-menu;
 
     &--light .fixed-menu__link::before {
-        background: $white;
+        background: rgb(164, 165, 168);
     }
 
     @include tablets {
@@ -73,10 +73,10 @@
 .fixed-menu--light {
     .fixed-menu__item--active {
         .fixed-menu__link {
-            border-color: #fff;
+            border-color: rgb(80, 79, 79);
             
             &::before {
-                background: #fff;
+                background: rgb(80, 79, 79);
             }
         }
         

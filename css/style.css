@@ -291,7 +291,7 @@ body {
 }
 
 .fixed-menu--light .fixed-menu__link::before {
-  background: #ffffff;
+  background: #a4a5a8;
 }
 
 @media screen and (max-width: 768px) {
@@ -359,11 +359,11 @@ body {
 }
 
 .fixed-menu--light .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+  border-color: #504f4f;
 }
 
 .fixed-menu--light .fixed-menu__item--active .fixed-menu__link::before {
-  background: #fff;
+  background: #504f4f;
 }
 
 @font-face {
