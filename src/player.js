@@ -47,7 +47,7 @@ video.addEventListener('ended', function () {
     video.currentTime = 0;
     playerPlayBtn.classList.remove('duration__img--active');
 });
-
+//background volumeLevel
 function bg(e) { 
     let position = e * 100;      
     soundControl.style.background =
