@@ -9,7 +9,10 @@ const playBtn = document.querySelector(".player__btn-img");
 const soundBtn = document.querySelector('#mic');
 const playerPlayBtn = document.querySelector(".duration__img");
 
+window.onload = function () {
+    return changeSoundVolume();
 
+};
 
 video = document.getElementById("video");
 
@@ -42,14 +45,20 @@ video.addEventListener('loadeddata', () => {
 
 });
 
+
+
 video.addEventListener('ended', function () {
     playBtn.classList.toggle("player__btn-img--active");
     video.currentTime = 0;
     playerPlayBtn.classList.remove('duration__img--active');
 });
+
+
+
+
 //background volumeLevel
-function bg(e) { 
-    let position = e * 100;      
+function bg(e) {
+    let position = e * 100;
     soundControl.style.background =
         `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${position}%, #333333 ${position}% )`;
 };
@@ -112,48 +121,3 @@ const changeSoundVolume = () => {
         bg(video.volume);
     }
 };
-
-/*$(function () {
-    const range = $('#volumeLevel');
-    let position;
-    
-    
-
-    const soundBtnActive = $("#mic");
-    const observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            if (mutation.attributeName === "class") {
-               let soundBtnClass = $(mutation.target).prop(mutation.attributeName);
-               if ($(soundBtnClass).hasClass('.active')) {
-                    $(position) = 0;
-                    bg(position);
-               }
-            }
-        });
-    });
-    observer.observe(soundBtnActive[0], {
-        attributes: true
-    });
-
-   
-
-    range.on('mouseenter', function () {
-
-        range.on('click', function () {
-            position = range.val() * 10;
-            bg(position);
-        });
-        range.on('mousemove', function () {
-            position = range.val() * 10;
-            bg(position);
-        });
-
-    });
-
-
-    function bg() {       
-        range.css({
-            'background-image': `linear-gradient(90deg, #E01F3D 0%, #E01F3D ${position}%, #333333 ${position}% )`
-        });
-    };
-});*/
